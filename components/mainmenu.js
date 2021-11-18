@@ -4,9 +4,9 @@ import Link from 'next/link'
 // Fake data
 import menuItems from '../fakeData/menuItems.json'
 
-export default function MainMenu() {
+export default function MainMenu({ className }) {
   return (
-    <ul className="flex text-mainMenu space-x-5">
+    <ul className={`flex text-mainMenu space-x-5 ${className}`}>
       {
         menuItems.map((m,i)=>(
           <li key={i} className="h-full">
@@ -20,7 +20,6 @@ export default function MainMenu() {
 
 /**
 * 
-* Main menu items
 * note: If this site will be a SPA, just use "a" tags instead of "Link"
 * 
 */

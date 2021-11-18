@@ -26,6 +26,7 @@ module.exports = {
         body: "24px",
         boxBody: "20px",
         boxSubHeader: "32px",
+        button: "14px",
         footerMenu: "16px",
         heroBody: "20px",
         heroHeader: "64px",
