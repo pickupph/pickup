@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <p>Pickup coming soon...</p>
+    <p className="p-5">Pickup coming soon...</p>
   )
 }
