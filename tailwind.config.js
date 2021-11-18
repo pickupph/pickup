@@ -33,7 +33,7 @@ module.exports = {
         subHeader: "48px"
       },
       height: {
-        header: "71px"
+        header: "90px"
       }
     },
   },
