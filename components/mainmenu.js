@@ -1,0 +1,26 @@
+// Package
+import Link from 'next/link'
+
+// Fake data
+import menuItems from '../fakeData/menuItems.json'
+
+export default function MainMenu() {
+  return (
+    <ul className="flex text-mainMenu space-x-5">
+      {
+        menuItems.map((m,i)=>(
+          <li key={i} className="h-full">
+            <Link href={m.url}><a>{m.label}</a></Link>
+          </li>
+        ))
+      }
+    </ul>
+  )
+}
+
+/**
+* 
+* Main menu items
+* note: If this site will be a SPA, just use "a" tags instead of "Link"
+* 
+*/

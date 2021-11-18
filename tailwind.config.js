@@ -20,7 +20,7 @@ module.exports = {
         subHeader: "#131416",
       },
       fontFamily: {
-        primary: ['Karla']
+        primary: ['karla']
       },
       fontSize: {
         body: "24px",
@@ -29,7 +29,11 @@ module.exports = {
         footerMenu: "16px",
         heroBody: "20px",
         heroHeader: "64px",
+        mainMenu: "16px",
         subHeader: "48px"
+      },
+      height: {
+        header: "71px"
       }
     },
   },
