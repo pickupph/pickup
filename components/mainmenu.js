@@ -9,7 +9,7 @@ export default function MainMenu({ className }) {
     <ul className={`flex text-mainMenu space-x-10 h-full ${className}`}>
       {
         menuItems.map((m,i)=>(
-          <li key={i} className="h-full hover:border-b h-full items-center flex">
+          <li key={i} className="h-full h-full items-center flex">
             <Link href={m.url}><a>{m.label}</a></Link>
           </li>
         ))
