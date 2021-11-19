@@ -39,6 +39,12 @@ module.exports = {
       height: {
         header: "90px"
       },
+      maxWidth: {
+        "127px": "127px"
+      },
+      minHeight: {
+        header: "90px"
+      },
       screens: {
         header: "1040px"
       }
