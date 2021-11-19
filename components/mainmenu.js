@@ -6,10 +6,10 @@ import menuItems from '../fakeData/menuItems.json'
 
 export default function MainMenu({ className }) {
   return (
-    <ul className={`flex block text-mainMenu space-x-5 ${className}`}>
+    <ul className={`flex text-mainMenu space-x-10 h-full ${className}`}>
       {
         menuItems.map((m,i)=>(
-          <li key={i} className="h-full">
+          <li key={i} className="h-full hover:border-b h-full items-center flex">
             <Link href={m.url}><a>{m.label}</a></Link>
           </li>
         ))

@@ -5,6 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        borderColor: {
+          gradientPrimary: "linear-gradient(to right, #33ccff 0%, #ff99cc 100%)"
+        },
         body: "#263238",
         boxBody: "#263238",
         boxSubHeader: "#263238",
@@ -35,6 +38,9 @@ module.exports = {
       },
       height: {
         header: "90px"
+      },
+      screens: {
+        header: "1040px"
       }
     },
   },

@@ -16,12 +16,13 @@ export default function Header() {
     <header className="px-5 border-b h-header flex items-center justify-between">
       <div className="h-full flex items-center">
         <Logo />
-        <MainMenu className="hidden md:flex" />
+        <MainMenu className="hidden header:flex" />
       </div>
       <div className="flex items-center space-x-5">
-        <button className="text-button uppercase bg-primary1 px-5 py-2 rounded-md font-semibold">Login</button>
+        <button className="text-button uppercase px-5 py-2 font-semibold hidden sm:block">Login</button>
+        <button className="text-button uppercase bg-primary1 px-5 py-2 rounded-md font-semibold whitespace-nowrap">Sign up free</button>
         <button onClick={()=>dispatch(setPopupMenu(popupMenu ? false : true))}>
-          <IconMenu className="block md:hidden" />
+          <IconMenu className="block header:hidden" />
         </button>
       </div>
     </header>
