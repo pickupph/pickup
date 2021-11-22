@@ -30,6 +30,7 @@ module.exports = {
         boxBody: "20px",
         boxSubHeader: "32px",
         button: "14px",
+        buttonLg: "20px",
         footerMenu: "16px",
         heroBody: "20px",
         heroHeader: "64px",
@@ -37,6 +38,8 @@ module.exports = {
         subHeader: "48px"
       },
       height: {
+        banner: "calc(100vh - (90px + 64px))",
+        buttonLg: "64px", 
         header: "90px"
       },
       maxWidth: {
@@ -47,6 +50,9 @@ module.exports = {
       },
       screens: {
         header: "1040px"
+      },
+      spacing: {
+        "32px": "32px"
       }
     },
   },
