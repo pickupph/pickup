@@ -1,6 +1,9 @@
 import Image from 'next/image'
 
-export default function BoxImage({ className, order = "lr" }) {
+export default function BoxImage({ 
+  className, 
+  order = "lr" 
+}) {
   return (
     <section>
       <div className={`py-5 md:py-0 container mx-auto grid md:grid-cols-2 md:gap-10 items-center justify-content md:min-h-boxXL ${ className}`}>

@@ -6,6 +6,7 @@ import Meta from "./meta"
 import Header from "../header"
 import Footer from "../footer"
 import PopupMainmenu from "../popupMainMenu"
+import SocialMedia from "../socialMedia"
 
 export default function LayoutDefault({ className, children }) {
 
@@ -17,6 +18,7 @@ export default function LayoutDefault({ className, children }) {
       <section className={`${className} font-karla text-body flex flex-col min-h-screen`}>
         <Header />
         <main className="flex-grow">{children}</main>
+        <SocialMedia />
         <Footer />
         {
           popupMenu ? <PopupMainmenu /> : null

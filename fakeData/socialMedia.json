@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Facebook",
+    "link": "https://www.facebook.com/pickup.ph/",
+    "icon": {
+      "src": "/images/icon-facebook.png",
+      "height": 64,
+      "width": 64
+    }
+  },
+  {
+    "label": "Instagram",
+    "link": "https://www.instagram.com/pickup.ph/",
+    "icon": {
+      "src": "/images/icon-instagram.png",
+      "height": 64,
+      "width": 64
+    }
+  }
+]

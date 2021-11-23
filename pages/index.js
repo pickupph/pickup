@@ -17,7 +17,19 @@ export default function Home() {
       </BannerMain>
 
       {/** Box 1 */}
+      <BoxImage />
+
+      {/** Box 2 */}
       <BoxImage order="rl" />
+
+      {/** Box 3 */}
+      <BoxImage />
+
+      {/** Box 4 */}
+      <BoxImage order="rl" />
+
+      {/** Box 5 */}
+      <BoxImage />
 
     </LayoutDefault>
     
