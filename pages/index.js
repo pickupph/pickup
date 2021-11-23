@@ -17,7 +17,7 @@ export default function Home() {
       </BannerMain>
 
       {/** Box 1 */}
-      <BoxImage />
+      <BoxImage order="rl" />
 
     </LayoutDefault>
     
