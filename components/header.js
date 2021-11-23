@@ -19,8 +19,8 @@ export default function Header() {
         <MainMenu className="hidden header:flex" />
       </div>
       <div className="flex items-center space-x-5">
-        <button className="text-button uppercase px-5 py-2 font-semibold hidden sm:block">Login</button>
-        <button className="text-button uppercase bg-primary1 px-5 py-2 rounded-md font-semibold whitespace-nowrap">Sign up free</button>
+        <button className="text-fs-button uppercase px-5 py-2 font-semibold hidden sm:block">Login</button>
+        <button className="text-fs-button uppercase bg-primary1 px-5 py-2 rounded-md font-semibold whitespace-nowrap">Sign up free</button>
         <button onClick={()=>dispatch(setPopupMenu(popupMenu ? false : true))}>
           <IconMenu className="block header:hidden" />
         </button>

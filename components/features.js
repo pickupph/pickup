@@ -18,9 +18,9 @@ export default function Features({ className }) {
                     <Image src={f.image.src} width={64} height={64} alt={f.label} />
                   </div>
                   <div>
-                    <h3 className="text-boxSubHeader text-center my-5">{f.label}</h3>
+                    <h3 className="text-fs-boxSubHeader text-center my-5">{f.label}</h3>
                   </div>
-                  <div className="text-bodySM text-center leading-loose">
+                  <div className="text-fs-bodySM text-center leading-loose">
                     <p>{f.description}</p>
                   </div>
                 </div>
