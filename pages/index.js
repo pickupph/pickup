@@ -1,6 +1,7 @@
 // Components
 import BannerMain from "../components/bannerMain"
 import BoxImage from "../components/boxImage"
+import Features from "../components/features"
 import Button from "../components/templates/button"
 import LayoutDefault from "../components/templates/layoutDefault"
 
@@ -30,6 +31,8 @@ export default function Home() {
 
       {/** Box 5 */}
       <BoxImage />
+
+      <Features />
 
     </LayoutDefault>
     

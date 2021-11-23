@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Feature 1",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "image": {
+      "src": "/images/image-placeholder.png",
+      "height": 512,
+      "width": 512
+    }
+  },
+  {
+    "label": "Feature 2",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "image": {
+      "src": "/images/image-placeholder.png",
+      "height": 512,
+      "width": 512
+    }
+  },
+  {
+    "label": "Feature 3",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "image": {
+      "src": "/images/image-placeholder.png",
+      "height": 512,
+      "width": 512
+    }
+  }
+]
