@@ -29,7 +29,7 @@ export default function Features({ className }) {
           }
         </div>
         <div className="my-20 text-center">
-          <Button bg="bg-white" className="bg-white border border-primary2 text-primary2">See All Features</Button>
+          <Button bg="bg-white" className=" border border-primary2 text-primary2 hover:bg-primary2 hover:text-white">See All Features</Button>
         </div>
       </div>
     </section>

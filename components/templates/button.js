@@ -9,7 +9,7 @@ export default function Button({
   children
 }) {
 
-  const DEFAULT_CLASS = `text-button md:text-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap ${bg}`
+  const DEFAULT_CLASS = `text-button md:text-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-100 ease-in-out ${bg}`
 
   if(type=="link") {
     return <Link href={link}><a className={`${DEFAULT_CLASS} ${className}`}>{children || label}</a></Link>
