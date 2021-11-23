@@ -16,7 +16,7 @@ export default function BoxImage({
         {/** Right */}
         <div className="p-5 flex justify-center">
           <div className="max-w-narrowSM">
-            <h2 className="text-subHeader mb-5">
+            <h2 className="text-subHeaderSM md:text-subHeader mb-5">
               Lorem Ipsum
             </h2>
             <p>

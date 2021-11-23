@@ -42,8 +42,10 @@ module.exports = {
         footerMenu: "16px",
         heroBody: "20px",
         heroHeader: "64px",
+        heroHeaderSM: "40px",
         mainMenu: "16px",
-        subHeader: "48px"
+        subHeader: "48px",
+        subHeaderSM: "38px"
       },
       height: {
         banner: "calc(100vh - (90px + 64px))",
