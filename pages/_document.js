@@ -18,7 +18,7 @@ class MyDocument extends Document {
            * There's another inside /components/templates/meta.js
            * 
            */}
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
+          {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript> */}
 
           <Main />
           <NextScript />
