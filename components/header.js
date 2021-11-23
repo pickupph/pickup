@@ -13,7 +13,7 @@ export default function Header() {
   const { popupMenu } = useSelector(state => state.ui)
 
   return (
-    <header className="px-5 border-b h-header flex items-center justify-between">
+    <header className="px-5 border-b h-header flex items-center justify-between sticky top-0 bg-white z-30">
       <div className="h-full flex items-center">
         <Logo />
         <MainMenu className="hidden header:flex" />

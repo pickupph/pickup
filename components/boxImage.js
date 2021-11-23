@@ -24,6 +24,7 @@ export default function BoxImage({
             </p>
           </div>
         </div>
+        
       </div>
     </section>
   )

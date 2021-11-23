@@ -5,54 +5,55 @@ module.exports = {
   theme: {
     extend: {
       borderColor: {
-        gradientPrimary: "linear-gradient(to right, #33ccff 0%, #ff99cc 100%)",
-        primary1: "#14c49b",
-        primary2: "#7d55ff",
-        secondary1: "#ffd603",
-        secondary2: "#ff4560",
-        secondary3: "#ff28a6",
-        secondary4: "#2641f1",
-        subHeader: "#131416",
+        "gradientPrimary": "linear-gradient(to right, #33ccff 0%, #ff99cc 100%)",
+        "primary1": "#14c49b",
+        "primary2": "#7d55ff",
+        "secondary1": "#ffd603",
+        "secondary2": "#ff4560",
+        "secondary3": "#ff28a6",
+        "secondary4": "#2641f1",
+        "subHeader": "#131416",
       },
       colors: {
-        body: "#263238",
-        boxBody: "#263238",
-        boxSubHeader: "#263238",
-        heroBody: "#263238",
-        heroHeader: "#131416",
-        footerMenu: "#263238",
-        primary1: "#14c49b",
-        primary2: "#7d55ff",
-        secondary1: "#ffd603",
-        secondary2: "#ff4560",
-        secondary3: "#ff28a6",
-        secondary4: "#2641f1",
-        subHeader: "#131416",
+        "body": "#263238",
+        "boxBody": "#263238",
+        "boxSubHeader": "#263238",
+        "heroBody": "#263238",
+        "heroHeader": "#131416",
+        "footerMenu": "#263238",
+        "primary1": "#14c49b",
+        "primary2": "#7d55ff",
+        "secondary1": "#ffd603",
+        "secondary2": "#ff4560",
+        "secondary3": "#ff28a6",
+        "secondary4": "#2641f1",
+        "subHeader": "#131416",
       },
       fontFamily: {
-        primary: ['karla']
+        "primary": ['karla']
       },
       fontSize: {
-        body: "24px",
-        bodySM: "18px",
-        boxBody: "20px",
-        boxSubHeader: "32px",
-        button: "14px",
-        buttonLg: "20px",
-        footerMenu: "16px",
-        heroBody: "20px",
-        heroHeader: "64px",
-        heroHeaderSM: "40px",
-        mainMenu: "16px",
-        subHeader: "48px",
-        subHeaderSM: "38px"
+        "fs-body": "24px",
+        "fs-bodySM": "18px",
+        "fs-bodyXS": "16px",
+        "fs-boxBody": "20px",
+        "fs-boxSubHeader": "32px",
+        "fs-button": "14px",
+        "fs-buttonLg": "20px",
+        "fs-footerMenu": "16px",
+        "fs-heroBody": "20px",
+        "fs-heroHeader": "64px",
+        "fs-heroHeaderSM": "40px",
+        "fs-mainMenu": "16px",
+        "fs-subHeader": "48px",
+        "fs-subHeaderSM": "38px"
       },
       height: {
-        banner: "calc(100vh - (90px + 64px))",
-        buttonLg: "64px", 
-        header: "90px",
-        imageBoxMD: "242px",
-        imageBox: "310px"
+        "banner": "calc(100vh - (90px + 64px))",
+        "buttonLg": "64px", 
+        "header": "90px",
+        "imageBoxMD": "242px",
+        "imageBox": "310px"
       },
       maxWidth: {
         "127px": "127px",
@@ -60,11 +61,11 @@ module.exports = {
         "narrowSM": "464px"
       },
       minHeight: {
-        header: "90px",
-        boxXL: "550px"
+        "header": "90px",
+        "boxXL": "550px"
       },
       screens: {
-        header: "1040px"
+        "header": "1040px"
       },
       spacing: {
         "32px": "32px"
