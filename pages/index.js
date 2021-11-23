@@ -32,6 +32,7 @@ export default function Home() {
       {/** Box 5 */}
       <BoxImage />
 
+      {/** Features 3 grid component */}
       <Features />
 
     </LayoutDefault>

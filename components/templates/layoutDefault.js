@@ -35,9 +35,8 @@ export default function LayoutDefault({ className, children }) {
         {/** Footer */}
         <Footer />
 
-        {
-          popupMenu ? <PopupMainmenu /> : null
-        }
+        {/** Mobile popup menu */}
+        <PopupMainmenu popupMenu={popupMenu} />
 
       </section>
     </>
