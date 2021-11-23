@@ -20,7 +20,7 @@ export default function Header() {
       </div>
       <div className="flex items-center space-x-5">
         <a href="https://app.pickup.ph" target="_blank" rel="noopener noreferrer" className="text-fs-button uppercase px-5 py-2 font-semibold hidden sm:block">Login</a>
-        <button className="text-fs-button uppercase bg-primary1 px-5 py-2 rounded-md font-semibold whitespace-nowrap">Sign up free</button>
+        <button className="text-fs-button uppercase bg-primary1 px-5 py-2 rounded-md font-semibold whitespace-nowrap transition duration-100 ease-in-out hover:brightness-90">Sign up free</button>
         <button onClick={()=>dispatch(setPopupMenu(popupMenu ? false : true))}>
           <IconMenu className="block header:hidden" />
         </button>

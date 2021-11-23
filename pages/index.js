@@ -14,7 +14,7 @@ export default function Home() {
       <BannerMain className="">
         <h1 className="text-fs-heroHeaderSM md:text-fs-heroHeader">Slogan here...</h1>
         <p className="my-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <Button bg="bg-primary2" className="my-5 h-buttonLg text-white"></Button>
+        <Button bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90"></Button>
       </BannerMain>
 
       {/** Box 1 */}

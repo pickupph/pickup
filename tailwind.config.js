@@ -4,8 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      background: {
+        "gradientPrimary": "linear-gradient(to right, #33ccff, #ff99cc)",
+      },
       borderColor: {
-        "gradientPrimary": "linear-gradient(to right, #33ccff 0%, #ff99cc 100%)",
         "primary1": "#14c49b",
         "primary2": "#7d55ff",
         "secondary1": "#ffd603",
@@ -75,6 +77,7 @@ module.exports = {
   variants: {
     extend: {
       borderColor: ['active'],
+      filter: ['hover']
     },
   },
   plugins: [],
