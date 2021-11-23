@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html prefix="og: https://ogp.me/ns#">
+      <Html prefix="og: https://ogp.me/ns#" lang="en">
         <Head />
         <body>
 

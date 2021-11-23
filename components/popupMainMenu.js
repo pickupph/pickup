@@ -19,6 +19,7 @@ export default function PopupMainmenu({ className }) {
       <div className="flex items-center justify-between min-h-header border-b px-5">
         <Logo />
         <button onClick={()=>dispatch(setPopupMenu(false))}>
+          <span className="hidden">Menu</span>
           <IconClose />
         </button>
       </div>
