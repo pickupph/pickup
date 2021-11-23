@@ -11,7 +11,7 @@ export default function MainMenu({ className }) {
         menuItems.map((m,i)=>(
           <li key={i} className="group h-full items-center flex relative">
             <Link href={m.url}><a>{m.label}</a></Link>
-            <div className="h-0.5 bg-gradient-to-r from-primary1 to-primary2 absolute transition-all duration-100 ease-in-out bottom-0 w-0 group-hover:w-full"></div>
+            <div className="h-0.5 bg-gradient-to-r from-primary1 to-primary2 absolute transition-all duration-100 ease-in-out bottom-0 w-0 group-hover:w-full hidden md:block"></div>
           </li>
         ))
       }
