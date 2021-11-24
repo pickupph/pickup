@@ -1,6 +1,9 @@
 import { useEffect } from "react"
 
 export default function BoxVideo({ 
+  video,
+  title,
+  content,
   className, 
   order = "lr" 
 }) {
@@ -8,7 +11,7 @@ export default function BoxVideo({
   useEffect(()=>{
 
     // This will trigger our autoplay
-    const v = document.querySelector('[data-video="video-2"]').play()
+    const v = document.querySelector(`[data-video="${video.id}"]`).play()
 
     if (v !== undefined) {
       v.then(_ => {
@@ -28,8 +31,8 @@ export default function BoxVideo({
         
         {/** Left */}
         <div className={`p-5 flex items-center justify-center ${order=='rl'?`md:order-2`:``}`}>
-          <video data-video="video-2" className="w-full" autoPlay muted loop>
-            <source src="/videos/video-2.mp4" type="video/mp4" />
+          <video data-video={video.id} className="w-full" autoPlay muted loop>
+            <source src={video.src} type={video.type} />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -38,10 +41,10 @@ export default function BoxVideo({
         <div className="p-5 flex justify-center">
           <div className="max-w-narrowSM">
             <h2 className="text-fs-subHeaderSM md:text-fs-subHeader mb-5">
-              Lorem Ipsum
+              {title}
             </h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              {content}
             </p>
           </div>
         </div>

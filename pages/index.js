@@ -14,7 +14,28 @@ export default function Home() {
       <BannerMain className="md:mb-20" />
 
       {/** Component special discounts */}
-      <BoxVideo />
+      <BoxVideo
+        video={{
+          id: `video-2`,
+          src: `/videos/video-2.mp4`,
+          type: `video/mp4`
+        }}
+        title="Lorem Ipsum"
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      />
+
+      {/** Component dashboard */}
+      <BoxVideo
+        video={{
+          id: `video-3`,
+          src: `/videos/video-3.mp4`,
+          type: `video/mp4`
+        }}
+        title="Lorem Ipsum"
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        order="rl"
+      />
+        
 
       {/** Box 2 */}
       <BoxImage order="rl" />
