@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="px-5 border-b h-header flex items-center justify-between sticky top-0 bg-white z-30">
       <div className="h-full flex items-center">
-        <Logo />
+        <Logo className="mr-2" />
         <MainMenu className="hidden header:flex" />
       </div>
       <div className="flex items-center space-x-5">
