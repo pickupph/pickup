@@ -80,5 +80,7 @@ module.exports = {
       filter: ['hover']
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
