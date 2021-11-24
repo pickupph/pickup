@@ -35,7 +35,7 @@ export default function BannerMain({ className }) {
       </div>
 
       <div className="my-5 md:my-0 ">
-        <video data-video="video-1" className="w-full" autoPlay muted>
+        <video data-video="video-1" className="w-full" autoPlay muted loop>
           <source src="/videos/video-1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

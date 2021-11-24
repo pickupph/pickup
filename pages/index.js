@@ -1,8 +1,8 @@
 // Components
 import BannerMain from "../components/bannerMain"
 import BoxImage from "../components/boxImage"
+import BoxVideo from "../components/boxVideo"
 import Features from "../components/features"
-import Button from "../components/templates/button"
 import LayoutDefault from "../components/templates/layoutDefault"
 
 
@@ -11,10 +11,10 @@ export default function Home() {
     <LayoutDefault>
 
       {/** Banner */}
-      <BannerMain />
+      <BannerMain className="md:mb-20" />
 
-      {/** Box 1 */}
-      <BoxImage />
+      {/** Component special discounts */}
+      <BoxVideo />
 
       {/** Box 2 */}
       <BoxImage order="rl" />
