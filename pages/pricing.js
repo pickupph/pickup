@@ -50,7 +50,7 @@ export default function Home() {
       <div className="container mx-auto grid lg:grid-cols-3 gap-5 md:gap-10 py-10 md:py-20 px-5">
       {
         pricing.map( p => (
-          <BlockPricing pricingPeriod={statePricingPeriod} pricing={p} />
+          <BlockPricing key={p.name} pricingPeriod={statePricingPeriod} pricing={p} />
         ))
       }
       </div>
