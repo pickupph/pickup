@@ -17,7 +17,9 @@ export default function PopupMainmenu({ className }) {
   return (
     <section className={`w-screen h-screen fixed top-0 bg-white flex flex-col space-y-5 transition-all duration-300 ease-in-out z-40 ${popupMenu ? `left-0` : `left-full`} ${className}`}>
       <div className="flex items-center justify-between min-h-header border-b px-5">
-        <Logo />
+        <div onClick={()=>dispatch(setPopupMenu(false))}>
+          <Logo />
+        </div>
         <button onClick={()=>dispatch(setPopupMenu(false))}>
           <span className="hidden">Menu</span>
           <IconClose />
