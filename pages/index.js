@@ -28,7 +28,7 @@ export default function Home() {
       <BoxVideo
         video={{
           id: `video-3`,
-          src: `/videos/video-3.mp4`,
+          src: `/videos/video-3-square.mp4`,
           type: `video/mp4`
         }}
         title="Lorem Ipsum"
@@ -37,17 +37,28 @@ export default function Home() {
       />
         
 
-      {/** Box 2 */}
-      <BoxImage order="rl" />
+      {/** Track delivery */}
+      <BoxVideo
+        video={{
+          id: `video-4`,
+          src: `/videos/track-delivery.mp4`,
+          type: `video/mp4`
+        }}
+        title="Track Delivery"
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      />
 
-      {/** Box 3 */}
-      <BoxImage />
-
-      {/** Box 4 */}
-      <BoxImage order="rl" />
-
-      {/** Box 5 */}
-      <BoxImage />
+      {/** Pickup dashboard */}
+      <BoxVideo
+        video={{
+          id: `video-5`,
+          src: `/videos/pickup.mp4`,
+          type: `video/mp4`
+        }}
+        title="Lorem Ipsum"
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        order="rl"
+      />
 
       {/** Features 3 grid component */}
       <Features />
