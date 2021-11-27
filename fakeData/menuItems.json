@@ -1,15 +1,15 @@
 [
   {
     "label": "About",
-    "url": "#about"
+    "url": "/about"
   },
   {
     "label": "What you get",
-    "url": "#what-you-get"
+    "url": "/what-you-get"
   },
   {
     "label": "How it works",
-    "url": "#how-it-works"
+    "url": "/how-it-works"
   },
   {
     "label": "Pricing",
@@ -17,6 +17,6 @@
   },
   {
     "label": "Testimonials",
-    "url": "#testimonials"
+    "url": "/testimonials"
   }
 ]
