@@ -60,7 +60,7 @@ export default function BlockPricing({ pricingPeriod, pricing }) {
       <div className="my-5">
         <Button 
           type="link"
-          link="/demo"
+          link="/book-a-demo"
           bg="bg-white hover:bg-primary2"
           className={`rounded-xl w-full capitalize  ${pricing.featured ? `text-black hover:text-white border border-white` : `text-primary2 hover:text-white border border-primary2` }`}
         >Get Started</Button>

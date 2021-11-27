@@ -1,6 +1,5 @@
 // Components
 import BannerMain from "../components/bannerMain"
-import BoxImage from "../components/boxImage"
 import BoxVideo from "../components/boxVideo"
 import Features from "../components/features"
 import LayoutDefault from "../components/templates/layoutDefault"
