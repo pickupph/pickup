@@ -1,0 +1,32 @@
+[
+  {
+    "type": "text",
+    "name": "username",
+    "label": "Username",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Username is required."
+    }
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "label": "Email",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Email is required."
+    }
+  },
+  {
+    "type": "password",
+    "name": "password",
+    "label": "Password",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Password is required."
+    }
+  }
+]
