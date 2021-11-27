@@ -14,7 +14,7 @@ export default function Features({ className }) {
             dataFeatures.map((f,i)=>(
               <div key={i} className="flex justify-center mb-5 md:mb-0">
                 <div className="md:max-w-narrowXS">
-                  <div className="py-10 md:py-0 flex items-center justify-center bg-gray-100 rounded-2xl md:h-imageBoxMD lg:h-imageBox">
+                  <div className="py-10 md:py-0 flex items-center justify-center bg-gray-100 min-h-[310px] rounded-2xl md:h-imageBoxMD lg:h-imageBox">
                     <Image src={f.image.src} width={64} height={64} alt={f.label} />
                   </div>
                   <div>
