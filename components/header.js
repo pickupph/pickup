@@ -24,7 +24,7 @@ export default function Header() {
         <Button 
           type="link" 
           link="/signup"
-          className="md:text-fs-button uppercase bg-primary1 py-[8px] px-[20px] rounded-md font-semibold whitespace-nowrap transition duration-100 ease-in-out hover:brightness-90"
+          className="md:text-[14px] uppercase bg-primary1 py-[8px] px-[20px] rounded-md font-semibold whitespace-nowrap transition duration-100 ease-in-out hover:brightness-90"
         >
           Sign up free
         </Button>
