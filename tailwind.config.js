@@ -37,6 +37,7 @@ module.exports = {
       fontSize: {
         "fs-body": "24px",
         "fs-bodySM": "18px",
+        "fs-bodyXXXS": "12px",
         "fs-bodyXS": "16px",
         "fs-boxBody": "20px",
         "fs-boxSubHeader": "32px",

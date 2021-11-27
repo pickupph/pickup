@@ -17,7 +17,7 @@ export default function Home() {
       <BoxVideo
         video={{
           id: `video-2`,
-          src: `/videos/video-2.mp4`,
+          src: `/videos/video-2-square.mp4`,
           type: `video/mp4`
         }}
         title="Lorem Ipsum"

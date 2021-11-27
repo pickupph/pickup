@@ -1,4 +1,4 @@
-//
+// Packages
 import { useSelector } from "react-redux"
 
 // Components
@@ -9,13 +9,13 @@ import PopupMainmenu from "../popupMainMenu"
 import SocialMedia from "../socialMedia"
 import Toolbar from "../toolbar"
 
-export default function LayoutDefault({ className, children }) {
+export default function LayoutDefault({ className, meta, children }) {
 
   const { popupMenu } = useSelector(state => state.ui)
 
   return (
     <>
-      <Meta />
+      <Meta {...meta} />
       <section className={`${className} font-karla text-body flex flex-col min-h-screen`}>
         
         {/** Toolbar */}

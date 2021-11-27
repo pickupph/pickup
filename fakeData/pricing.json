@@ -1,0 +1,61 @@
+[
+  {
+    "name": "starter",
+    "label": "Starter Plan",
+    "description": "Everything you need to create an online ordering system with full payment and delivery integration - all for FREE.",
+    "features": [
+      "Build an Online Store in Seconds",
+      "Branded Shopping Basket",
+      "In-Store Tablet Interface",
+      "Admin Panel & Dashboards",
+      "Order Status Management",
+      "Order Push Notifications",
+      "Online ePayment Integration",
+      "Delivery App Integration",
+      "Order Email Automation"
+    ],
+    "price": {
+      "monthly": 0,
+      "annual": 0
+    }
+  },
+  {
+    "name": "multi-store",
+    "label": "Multi-Store Plan",
+    "description": "All the inclusions from the Starter Plan along with everything you need to take your online store the next level.",
+    "features": [
+      "QSR Order Demand Shaping",
+      "Multi-Brand and Multi-Store",
+      "Granular Dashboards & Analytics",
+      "Custom Reports",
+      "Customer Data Reporting",
+      "Customer Feedback",
+      "Loyalty Programs",
+      "Promo Codes",
+      "Branded Shopping Basket"
+    ],
+    "price": {
+      "monthly": 0,
+      "annual": 0
+    }
+  },
+  {
+    "name": "scale",
+    "label": "Scale Plan",
+    "description": "Dedicated for multinational chains and shopping malls with vast scale of brands and stores. Unlock unlimited store power that is built for scale with:",
+    "features": [
+      "Custom Branded Stores",
+      "Third Party API Integration",
+      "Search Engine Optimisation",
+      "In-app Advertising",
+      "Influencer Marketing",
+      "Custom Rewards Program",
+      "Customer Re-marketing Tools",
+      "Branded iOS & Android App"
+    ],
+    "price": {
+      "monthly": 0,
+      "annual": 0
+    }
+  }
+]
