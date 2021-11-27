@@ -31,7 +31,7 @@ export default function BoxVideo({
         
         {/** Left */}
         <div className={`p-5 flex items-center justify-center ${order=='rl'?`md:order-2`:``}`}>
-          <video data-video={video.id} className="w-full" autoPlay muted loop allowfullscreen={false}>
+          <video data-video={video.id} className="w-full" autoPlay muted loop allowfullscreen={false} playsInline>
             <source src={video.src} type={video.type} />
             Your browser does not support the video tag.
           </video>
