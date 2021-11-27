@@ -15,9 +15,11 @@
       "Order Email Automation"
     ],
     "price": {
-      "monthly": 0,
-      "annual": 0
-    }
+      "monthly": 1000,
+      "annual": 9999
+    },
+    "active": false,
+    "featured": true
   },
   {
     "name": "multi-store",
@@ -35,9 +37,11 @@
       "Branded Shopping Basket"
     ],
     "price": {
-      "monthly": 0,
-      "annual": 0
-    }
+      "monthly": 1299,
+      "annual": 10999
+    },
+    "active": true,
+    "featured": false
   },
   {
     "name": "scale",
@@ -56,6 +60,8 @@
     "price": {
       "monthly": 0,
       "annual": 0
-    }
+    },
+    "active": false,
+    "featured": false
   }
 ]

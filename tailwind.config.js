@@ -78,7 +78,8 @@ module.exports = {
   variants: {
     extend: {
       borderColor: ['active'],
-      filter: ['hover']
+      filter: ['hover'],
+      transitionProperty: ['hover']
     },
   },
   plugins: [
