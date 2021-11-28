@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../config/constants'
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_IMAGE_DEFAULT } from '../../config/constants'
 
-export default function Meta({ title, description }){
+export default function Meta({ title, description, image }){
   return(
     <Head>
 
@@ -23,6 +23,12 @@ export default function Meta({ title, description }){
       <meta name="description" content={description || SITE_DESCRIPTION} />
 
       <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={ title ? title.replace(/&amp;/gi, "&" ) : SITE_TITLE } />
+      <meta property="og:description" content={description || SITE_DESCRIPTION} />
+      <meta property="og:image" content={image || SITE_IMAGE_DEFAULT} />
+
     </Head>
 
   )
