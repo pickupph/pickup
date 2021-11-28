@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Help Topics",
+    "url": "/help"
+  },
+  {
+    "label": "Getting Started",
+    "url": "/getting-started"
+  },
+  {
+    "label": "Features how to",
+    "url": "/features-how-to"
+  },
+  {
+    "label": "FAQs",
+    "url": "/faqs"
+  },
+  {
+    "label": "Report a violation",
+    "url": "/report-a-violation"
+  }
+]

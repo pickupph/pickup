@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Blog",
+    "url": "/blog"
+  },
+  {
+    "label": "About",
+    "url": "/about"
+  },
+  {
+    "label": "Press",
+    "url": "/press"
+  },
+  {
+    "label": "Careers",
+    "url": "/careers"
+  },
+  {
+    "label": "Social Good",
+    "url": "/social-good"
+  },
+  {
+    "label": "Contact",
+    "url": "/contact"
+  }
+]

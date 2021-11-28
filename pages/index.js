@@ -1,6 +1,7 @@
 // Components
 import AsFeaturedIn from "../components/asFeaturedIn"
 import BannerMain from "../components/bannerMain"
+import Bottom from "../components/bottom"
 import BoxVideo from "../components/boxVideo"
 import Divider from "../components/divider"
 import Features from "../components/features"
@@ -69,6 +70,9 @@ export default function Home() {
 
       {/** Component */}
       <AsFeaturedIn />
+
+      {/** */}
+      <Bottom className="mb-10 md:mb-20" />
 
     </LayoutDefault>
     

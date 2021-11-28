@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function AsFeaturedIn({ className }) {
   return (
-    <section className={`my-5 p-5 mb-20 ${className}`}>
+    <section className={`my-5 p-5 md:mb-20 ${className}`}>
       <div className="container mx-auto">
         <p className="text-[20px] text-center my-10">As featured in</p>
         <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-center text-center gap-5 w-full">
