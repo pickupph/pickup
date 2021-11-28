@@ -1,6 +1,8 @@
 // Components
+import AsFeaturedIn from "../components/asFeaturedIn"
 import BannerMain from "../components/bannerMain"
 import BoxVideo from "../components/boxVideo"
+import Divider from "../components/divider"
 import Features from "../components/features"
 import LayoutDefault from "../components/templates/layoutDefault"
 
@@ -61,6 +63,12 @@ export default function Home() {
 
       {/** Features 3 grid component */}
       <Features />
+      
+      {/** */}
+      <Divider className="container mx-auto" />
+
+      {/** Component */}
+      <AsFeaturedIn />
 
     </LayoutDefault>
     

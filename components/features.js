@@ -9,7 +9,7 @@ export default function Features({ className }) {
   return (
     <section className={`${className}`}>
       <div className="py-20 px-5 container mx-auto">
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-3 gap-5 mb-20">
           {
             dataFeatures.map((f,i)=>(
               <div key={i} className="flex justify-center mb-5 md:mb-0">
@@ -28,7 +28,7 @@ export default function Features({ className }) {
             ))
           }
         </div>
-        <div className="my-20 text-center">
+        <div className="text-center">
           <Button bg="bg-white" className=" border border-primary2 text-primary2 hover:bg-primary2 hover:text-white">See All Features</Button>
         </div>
       </div>
