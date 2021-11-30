@@ -19,9 +19,6 @@ export default function MainMenu({ className }) {
       {
         menuItems.map((m,i)=>(
           <li key={i} className="group h-full items-center flex relative">
-            {
-              console.log(m.url==router.pathname)
-            }
             <Link href={m.url}><a onClick={()=>dispatch(setPopupMenu(false))}>{m.label}</a></Link>
             <div className={`h-0.5 bg-gradient-to-r from-primary1 to-primary2 absolute transition-all duration-100 ease-in-out bottom-0 group-hover:w-full hidden lg:block ${router.pathname==m.url?`w-full`:`w-0`}`}></div>
           </li>

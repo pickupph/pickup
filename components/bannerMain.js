@@ -19,7 +19,7 @@ export default function BannerMain({ className }) {
       }).catch(error => {
         // Autoplay was prevented.
         // Show a "Play" button so that user can start playback.
-        console.log('Not autoplaying..')
+        // console.log('Not autoplaying..')
       });
     }
 
