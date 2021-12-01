@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <LayoutBasic
       meta={{
-        title: "FAQs | Pickup PH help center" 
+        title: "FAQs | Pickup PH help center"
       }}
       className="bg-[#f3f5f7]" 
     >
