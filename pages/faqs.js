@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(()=>{
 
-    if(term) {
+    if(term) { 
       let pattern = new RegExp(term, 'i')
       setStateFaqs(dataFAQs.filter(faq=>faq.title.match(pattern)))
     }
