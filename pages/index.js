@@ -15,6 +15,17 @@ export default function Home() {
       {/** Banner */}
       <BannerMain className="md:mb-20" />
 
+      {/** Pickup dashboard */}
+      <BoxVideo
+        video={{
+          id: `video-5`,
+          src: `/videos/pickup.mp4`,
+          type: `video/mp4`
+        }}
+        title="Lorem Ipsum"
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      />
+
       {/** Component special discounts */}
       <BoxVideo
         video={{
@@ -24,6 +35,7 @@ export default function Home() {
         }}
         title="Lorem Ipsum"
         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        order="rl"
       />
 
       {/** Component dashboard */}
@@ -35,7 +47,6 @@ export default function Home() {
         }}
         title="Lorem Ipsum"
         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-        order="rl"
       />
         
 
@@ -48,18 +59,18 @@ export default function Home() {
         }}
         title="Track Delivery"
         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        order="rl"
       />
 
-      {/** Pickup dashboard */}
+      {/** Rewards */}
       <BoxVideo
         video={{
-          id: `video-5`,
-          src: `/videos/pickup.mp4`,
+          id: `video-6`,
+          src: `/videos/video-rewards.mp4`,
           type: `video/mp4`
         }}
-        title="Lorem Ipsum"
+        title="Rewards"
         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-        order="rl"
       />
 
       {/** Features 3 grid component */}
