@@ -1,0 +1,32 @@
+[
+  {
+    "title": "How do orders work on Pickup?",
+    "content": "<ul><li>Customers can order either on your website 💻, our website or by using the Pickup app (coming soon)📱, available on iOS and Android. They simply add their location to find a nearby restaurant.</li><li>Customers choose 🤔 what they want from your menu and place their order.</li><li>You accept ✅ the order, prepare the food 🍔, and then carefully package it.</li><li>Once you set the order status to Ready, if it’s a delivery order, the app will automatically hail a delivery rider 🛵 and if it’s a pickup order, the app will notify the customer that their order is ready for pickup 🛍 at the store.</li><li>For a delivery order, once it's picked up by the delivery rider, it will be delivered to the customer.</li> The customer can track the progress of their order through the Pickup website or app and enjoy their meal with an amazing customer experience 🥰.</li></ul>",
+    "author": "Jane Doe",
+    "datePublish": "2021-10-12"
+  },
+  {
+    "title": "Why is Pickup the best online ordering and delivery platform to work with?",
+    "content": "<p>Put simply, we are a ZERO commission and FREE platform - how can you beat that?! Pickup was built by Retailers FOR Retailers and as such we're experts in understanding and solving challenges retailers face. As the leading online ordering and delivery app, we offer cutting-edge technology, deep logistics integration, analytics and access to a regional network of trained delivery riders. Every order is tracked, and our dynamic ordering technology means you can create the best customer experience and deliver your food hot, fresh and on time.</p>",
+    "author": "Jane Doe",
+    "datePublish": "2021-10-12"
+  },
+  {
+    "title": "Who handles the deliveries?",
+    "content": "<p>As a Pickup partner you have access to our network of partner logistic companies and their rider networks. As a platform, we are delivery agnostic and partner with the largest, trusted logistics providers in the Philippines such as GrabExpress and Lalamove. Our platform is fully integrated with these delivery partners, so that your food arrives at the customer’s doorstep in the fastest and most reliable manner.</p>",
+    "author": "Jane Doe",
+    "datePublish": "2021-10-12"
+  },
+  {
+    "title": "How far do you deliver?",
+    "content": "<p>The absolute maximum delivery radiuses vary based on the logistics partner. Deliveries can be as far as 20km, but we recommend setting a delivery distance that ensures your food is never in transit for longer than it needs to be. Some cuisines travel better than others and this is something you should consider when selecting the right delivery distance. You can change your maximum delivery distance in the Delivery Settings of your Pickup App or by emailing support at support@pickup.ph. </p>",
+    "author": "Jane Doe",
+    "datePublish": "2021-10-12"
+  },
+  {
+    "title": "How much does it cost?",
+    "content": "<p>Pickup.ph is ZERO commission and FREE. We are a freemium app which means that all of the standard features such as online ordering, delivery integration, payment integration + more, are free and will remain free. We also have enhanced premium features such as promo-codes, Pickup.ph Marketing Engine, SMS integration, Google Analytics, loyalty + more for a small subscription fee. Upgrading is always optional and never mandatory - for a full list of free and premium features, please visit our website.</p>",
+    "author": "Jane Doe",
+    "datePublish": "2021-10-12"
+  }
+]

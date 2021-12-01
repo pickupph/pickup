@@ -61,7 +61,8 @@ module.exports = {
       maxWidth: {
         "127px": "127px",
         "narrowXS": "310px",
-        "narrowSM": "464px"
+        "narrowSM": "464px",
+        "narrowMD": "900px"
       },
       minHeight: {
         "header": "90px",
