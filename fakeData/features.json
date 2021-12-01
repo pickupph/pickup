@@ -3,27 +3,36 @@
     "label": "Feature 1",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     "image": {
-      "src": "/images/image-placeholder.png",
-      "height": 512,
-      "width": 512
+      "src": "/images/feature-1.png",
+      "height": 310,
+      "width": 310
     }
   },
   {
     "label": "Feature 2",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     "image": {
-      "src": "/images/image-placeholder.png",
-      "height": 512,
-      "width": 512
+      "src": "/images/feature-2.png",
+      "height": 310,
+      "width": 310
     }
   },
   {
     "label": "Feature 3",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     "image": {
-      "src": "/images/image-placeholder.png",
-      "height": 512,
-      "width": 512
+      "src": "/images/feature-3.png",
+      "height": 310,
+      "width": 310
+    }
+  },
+  {
+    "label": "Feature 4",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "image": {
+      "src": "/images/feature-4.png",
+      "height": 310,
+      "width": 310
     }
   }
 ]
