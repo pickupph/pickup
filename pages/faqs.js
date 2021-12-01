@@ -33,7 +33,7 @@ export default function Home() {
       meta={{
         title: "FAQs | Pickup PH help center"
       }}
-      className="bg-[#f3f5f7]"
+      className="bg-[#f3f5f7]" 
     >
 
       <div className="m-5 mt-10 max-w-narrowMD mx-auto text-[14px] flex items-center space-x-2 px-5">
