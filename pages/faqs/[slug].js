@@ -98,7 +98,7 @@ export default function Faqs({ faq }) {
           </div>  
         </div>
 
-      </LayoutBasic>
+      </LayoutBasic> 
     )
   }
 
