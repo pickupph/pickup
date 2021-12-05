@@ -12,7 +12,6 @@ import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 import LayoutBasic from "../../components/templates/layoutBasic"
 
 // Data
-import dataFAQs from '../../fakeData/faqs.json'
 import { setTerm } from '../../store/searchSlice'
 
 
@@ -35,7 +34,7 @@ export default function Faqs({ collection }) {
       setStateFaqs(collection.filter(faq=>faq.title.rendered.match(pattern)))
     }
 
-  },[ term ])
+  }, [ term ])
 
   return (
     <LayoutBasic
@@ -122,8 +121,6 @@ export async function getStaticProps() {
    * Pull FAQs collection
    */
   const collection = await fetch(`${WP_API_URL}/wp/v2/faqs?per_page=${WP_PER_PAGE}&_embed`).then(res => res.json())
-
-  console.log(collection)
 
   return {
     props: {

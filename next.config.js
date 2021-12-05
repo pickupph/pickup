@@ -1,5 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   images: {
     domains: [
       process.env.NEXT_PUBLIC_WP,
