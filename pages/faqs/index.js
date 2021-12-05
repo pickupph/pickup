@@ -1,10 +1,12 @@
 // Packages
 import Link from 'next/link'
 import Image from 'next/image'
-import slugify from 'slugify'
 import { IconArrowDown } from '../../components/templates/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
+
+// Helpers
+import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 
 // Components
 import LayoutBasic from "../../components/templates/layoutBasic"
@@ -14,10 +16,10 @@ import dataFAQs from '../../fakeData/faqs.json'
 import { setTerm } from '../../store/searchSlice'
 
 
-export default function Faqs() {
+export default function Faqs({ collection }) {
 
   const { term } = useSelector(state=>state.search)
-  const [ stateFaqs, setStateFaqs ] = useState(dataFAQs)
+  const [ stateFaqs, setStateFaqs ] = useState(collection)
   const dispatch = useDispatch()
 
   useEffect(()=>{
@@ -30,7 +32,7 @@ export default function Faqs() {
 
     if(term) { 
       let pattern = new RegExp(term, 'i')
-      setStateFaqs(dataFAQs.filter(faq=>faq.title.match(pattern)))
+      setStateFaqs(collection.filter(faq=>faq.title.rendered.match(pattern)))
     }
 
   },[ term ])
@@ -67,32 +69,39 @@ export default function Faqs() {
           </div>
 
           <div>
-            { stateFaqs.length > 0 ?
+            { collection.length > 0 ?
               <ul className="grid rounded-lg overflow-hidden hover:shadow-md border border-[#d4dadf] gap-[1px] bg-[#d4dadf]">    
               {
-                stateFaqs.map((item, i)=>(
-                  <li key={i} className="">
-                    <Link href={`/faqs/${slugify(item.title, {lower: true})}`}>
-                      <a 
-                        className="bg-white p-[30px] block text-primary2 text-[18px]"
-                        onClick={()=>dispatch(setTerm(""))}
-                      >
-                        <div className="mb-2">
-                          {item.title}
-                        </div>
-                        <div className="text-[13px] text-[#8f919d] flex items-center space-x-4">
-                          <div className="">
-                            <div className="h-[32px] w-[32px] bg-primary2 text-white text-[18px] font-bold rounded-full flex items-center justify-center">C</div>
+                stateFaqs.map((item, i)=>{     
+                  
+                  console.log(collection)
+
+                  return (
+                    <li key={i} className="">
+                      <Link href={`/faqs/${item.slug}`}>
+                        <a 
+                          className="bg-white p-[30px] block text-primary2 text-[18px]"
+                          onClick={()=>dispatch(setTerm(""))}
+                        >
+                          <div className="mb-2">
+                            {item.title.rendered}
                           </div>
-                          <div>
-                            Written by <span className="text-[#4f5e6b]">{item.author}</span><br />
-                            Updated over a week ago
+                          <div className="text-[13px] text-[#8f919d] flex items-center space-x-4">
+                            <div className="">
+                              <div className="h-[32px] w-[32px] bg-primary2 text-white text-[18px] font-bold rounded-full flex items-center justify-center overflow-hidden">
+                                <Image src={item._embedded.author[0].avatar_urls[48]} height={32} width={32} alt={item._embedded.author[0].name} />
+                              </div>
+                            </div>
+                            <div>
+                              Written by <span className="text-[#4f5e6b]">{item._embedded.author[0].name}</span><br />
+                              Updated over a week ago
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    </Link>
-                  </li>
-                ))
+                        </a>
+                      </Link>
+                    </li>
+                  )
+                })
               }
               </ul> :
               <div>No search result found for <span className="italic">{`${term}.`}</span></div>
@@ -105,4 +114,22 @@ export default function Faqs() {
     </LayoutBasic>
     
   )
+}
+
+export async function getStaticProps() {
+
+  /**
+   * Pull FAQs collection
+   */
+  const collection = await fetch(`${WP_API_URL}/wp/v2/faqs?per_page=${WP_PER_PAGE}&_embed`).then(res => res.json())
+
+  console.log(collection)
+
+  return {
+    props: {
+      collection,
+    },
+    revalidate: 10
+  }
+
 }

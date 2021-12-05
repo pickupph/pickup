@@ -4,3 +4,6 @@ export const SITE_IMAGE_DEFAULT = "https://pickupph.vercel.app/images/image-defa
 
 export const CURRENCY_SYMBOL = "P"
 export const CURRENCY_NAME = "pesos"
+
+export const WP_API_URL = process.env.NEXT_PUBLIC_WPAPI
+export const WP_PER_PAGE = 100
