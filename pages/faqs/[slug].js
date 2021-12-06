@@ -5,6 +5,10 @@ import Image from 'next/image'
 import { IconArrowDown } from '../../components/templates/icons'
 import { useDispatch, useSelector } from 'react-redux'
 
+import TimeAgo from 'javascript-time-ago'
+import en from 'javascript-time-ago/locale/en.json'
+TimeAgo.addDefaultLocale(en)
+
 // Helpers
 import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 
@@ -13,12 +17,15 @@ import LayoutBasic from "../../components/templates/layoutBasic"
 
 // Data
 import { setTerm } from '../../store/searchSlice'
+import { formatWithValidation } from 'next/dist/shared/lib/utils'
 
 export default function Faqs({ faq, collection }) {
 
   const { term } = useSelector(state=>state.search)
   const [ stateFaqs, setStateFaqs ] = useState(collection)
   const dispatch = useDispatch()
+
+  const timeAgo = new TimeAgo('en-US')
 
   useEffect(()=>{
 
@@ -81,6 +88,7 @@ export default function Faqs({ faq, collection }) {
                           src: item._embedded.author[0].avatar_urls[48]
                         }
                       }
+                      let date = timeAgo.format(new Date(item.date))
 
                       return(
                         <li key={i} className="">
@@ -100,7 +108,7 @@ export default function Faqs({ faq, collection }) {
                                 </div>
                                 <div>
                                   Written by <span className="text-[#4f5e6b]">{author.name}</span><br />
-                                  Updated over a week ago
+                                  Updated over {date}
                                 </div>
                               </div>
                             </a>
@@ -151,7 +159,7 @@ export default function Faqs({ faq, collection }) {
               </div>
               <div>
                 Written by <span className="text-[#4f5e6b]">{faq.author.name}</span><br />
-                Updated over a week ago
+                Updated over {faq.date}
               </div>
             </div>
 
@@ -169,6 +177,9 @@ export default function Faqs({ faq, collection }) {
 
 export async function getStaticProps({ params }) {
 
+  //
+  const timeAgo = new TimeAgo('en-US')
+
   // Get data
   const slug = params.slug
   const faqData = await fetch(`${WP_API_URL}/wp/v2/faqs?slug=${slug}&per_page=${WP_PER_PAGE}&_embed`).then(res => res.json())
@@ -183,7 +194,8 @@ export async function getStaticProps({ params }) {
       image: {
         src: faqData[0]._embedded.author[0].avatar_urls[48]
       }
-    }
+    },
+    date: timeAgo.format(new Date(faqData[0].date))
   }
 
   // Send data

@@ -5,6 +5,10 @@ import { IconArrowDown } from '../../components/templates/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 
+import TimeAgo from 'javascript-time-ago'
+import en from 'javascript-time-ago/locale/en.json'
+TimeAgo.addDefaultLocale(en)
+
 // Helpers
 import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 
@@ -20,6 +24,8 @@ export default function Faqs({ collection }) {
   const { term } = useSelector(state=>state.search)
   const [ stateFaqs, setStateFaqs ] = useState(collection)
   const dispatch = useDispatch()
+  
+  const timeAgo = new TimeAgo('en-US')
 
   useEffect(()=>{
 
@@ -83,6 +89,7 @@ export default function Faqs({ collection }) {
                       src: item._embedded.author[0].avatar_urls[48]
                     }
                   }
+                  let date = timeAgo.format(new Date(item.date))
 
                   return (
                     <li key={i} className="">
@@ -102,7 +109,7 @@ export default function Faqs({ collection }) {
                             </div>
                             <div>
                               Written by <span className="text-[#4f5e6b]">{author.name}</span><br />
-                              Updated over a week ago
+                              Updated over {date}
                             </div>
                           </div>
                         </a>
