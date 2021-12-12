@@ -1,11 +1,14 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: [
+    './pages/**/*.{js,ts,jsx,tsx}', 
+    './components/**/*.{js,ts,jsx,tsx}'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       background: {
         "gradientPrimary": "linear-gradient(to right, #33ccff, #ff99cc)",
+        "gradientSecondary": "linear-gradient(to right, #28bf7b, #2ed3ba, #44c2d7, #5aa2dc, #708de0, #8a86e5)",
       },
       borderColor: {
         "primary1": "#14c49b",
