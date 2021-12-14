@@ -1,9 +1,8 @@
 // Packages
+import { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { IconArrowDown } from '../../components/templates/icons'
-import { useDispatch, useSelector } from 'react-redux'
-import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import moment from 'moment'
 
 import TimeAgo from 'javascript-time-ago'
@@ -13,28 +12,12 @@ TimeAgo.addDefaultLocale(en)
 // Helpers
 import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 
-// Components
-import LayoutBasic from "../../components/templates/layoutBasic"
-
 // Data
-import { setTerm } from '../../store/searchSlice'
 import LayoutBlog from '../../components/templates/layoutBlog'
-import { width } from 'tailwindcss/defaultTheme'
-
 
 export default function Blog({ collection }) {
 
   const { term } = useSelector(state=>state.search)
-  const [ stateFaqs, setStateFaqs ] = useState(collection)
-  const dispatch = useDispatch()
-  
-  const timeAgo = new TimeAgo('en-US')
-
-  useEffect(()=>{
-
-    setTerm("")
-
-  }, [])
 
   useEffect(()=>{
 
@@ -52,20 +35,16 @@ export default function Blog({ collection }) {
       }}
     >
 
-      {
-        // console.log(collection)
-      }
-
       {/** Latest blog */}
-      <section className="py-[56px]">
+      <section className="py-[28px] md:py-[56px]">
         <div className="container mx-auto w-full">
-          <div className="flex items-center group space-x-10">
+          <div className="flex items-center group space-x-10 flex-col md:flex-row">
             <div>
               <div className="flex space-x-5">
-                <span className="text-[18px] text-[#20202] font-semibold">7 min read</span>
+                <span className="text-[18px] text-[#202020] font-semibold">7 min read</span>
                 <span className="font-semibold text-[18px] text-[#8a86e5]">Category</span>
               </div>
-              <h1 className="text-[72px] font-bold leading-tight tracking-tight text-[#202020] my-3">
+              <h1 className="text-[36px] md:text-[72px] font-bold leading-tight tracking-tight text-[#202020] my-3">
                 <Link href={`/blog/${collection[0].slug}`}>
                   <a 
                     className="bg-no-repeat group-hover:bg-gradient-to-r from-[#28bf7b] via-[#2ed3ba] via-[#44c2d7] via-[#5aa2dc] to-[#8a86e5] bg-bottom bg-[length:100%_8px]"

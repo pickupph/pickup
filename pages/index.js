@@ -3,6 +3,7 @@ import AsFeaturedIn from "../components/asFeaturedIn"
 import BannerMain from "../components/bannerMain"
 import Bottom from "../components/bottom"
 import BoxVideo from "../components/boxVideo"
+import Community from "../components/community"
 import Divider from "../components/divider"
 import Features from "../components/features"
 import LayoutDefault from "../components/templates/layoutDefault"
@@ -75,6 +76,9 @@ export default function Home() {
 
       {/** Features 3 grid component */}
       <Features />
+
+      {/** */}
+      <Community />
       
       {/** */}
       <Divider className="container mx-auto" />

@@ -75,7 +75,8 @@ module.exports = {
         "header": "1040px"
       },
       spacing: {
-        "32px": "32px"
+        "32px": "32px",
+        "plSlider": "calc((100vw - 1280px) / 2)"
       }
     },
   },

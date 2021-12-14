@@ -20,7 +20,7 @@ export default function LayoutBlog({ className, meta, children }) {
         <main className="flex-grow max-w-[1148px] mx-auto">{children}</main>
 
         {/** */}
-        <div className="fixed rotate-90 uppercase underline hover:no-underline font-bold left-[-40px] top-[44%] text-[#202020]">
+        <div className="hidden md:block fixed rotate-90 uppercase underline hover:no-underline font-bold left-[-40px] top-[44%] text-[#202020]">
           <Link href="/"><a>Back to Pickup.ph</a></Link>
         </div>
 
