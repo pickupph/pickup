@@ -20,7 +20,7 @@ export default function SocialMedia() {
               <li key={i}>
                 <Link href={sm.link} target="_blank" rel="noopener noreferrer">
                   <a>
-                    <Image src={sm.icon.src} alt={sm.label} width={24} height={24} />
+                    <Image src={sm.icon.src} alt={sm.label} width={24} height={24} className='grayscale hover:grayscale-0 transition-all duration-300 ease-in-out' />
                   </a>
                 </Link>
               </li>
