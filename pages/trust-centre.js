@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 // Components
 import LayoutDefault from "../components/templates/layoutDefault"
+import Bottom from '../components/bottom'
 
 export default function TrustCentre() {
 
@@ -11,7 +12,7 @@ export default function TrustCentre() {
       meta={{
         title: "Trust Centre"
       }}
-      classNameMain="flex items-center"
+      classNameMain="flex items-center flex-col"
     >
 
       <div className="container mx-auto px-5 py-5 md:py-10 max-w-[700px] mb-[64px]">
@@ -59,6 +60,9 @@ export default function TrustCentre() {
           }
         </ul>
       </div>
+
+      {/** */}
+      <Bottom className="mb-10 md:mb-20" />
 
     </LayoutDefault>
     
