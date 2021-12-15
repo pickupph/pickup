@@ -16,7 +16,7 @@ export default function Page({ _page }) {
     >
 
       <div className="container mx-auto py-5 px-5 md:py-10">
-        <h1 className="text-[40px] mb-5">Terms of service</h1>
+        <h1 className="text-[40px] mb-5">{page.title.rendered}</h1>
         <div className="editor" dangerouslySetInnerHTML={{__html: page.content.rendered}} />
       </div>
 
