@@ -10,5 +10,9 @@
   {
     "label": "Pricing",
     "url": "/pricing"
+  },
+  {
+    "label": "Enterprise",
+    "url": "/enterprise"
   }
 ]

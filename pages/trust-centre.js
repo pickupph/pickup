@@ -38,23 +38,6 @@ export default function TrustCentre() {
             ))
           }
         </ul>
-        {/* <hr className="my-5 text-gray-300" />
-        <ul className="mt-6 list-disc list-inside">
-          {
-            [
-              {
-                "label": "GDPR Request form",
-                "url": "/#"
-              }
-            ].map((item, i)=>(
-              <li key={i}>
-                <Link href={item.url}>
-                  <a className="underline inline-block my-[2px]">{item.label}</a>
-                </Link>
-              </li>
-            ))
-          }
-        </ul> */}
       </div>
 
       {/** */}
