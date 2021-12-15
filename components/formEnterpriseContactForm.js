@@ -43,7 +43,6 @@ export default function FormEnterpriseContactForm({ className }) {
 
       })
 
-      console.log('consent: ', e.target.consent.checked)
       if(!e.target.consent.checked) {
         errors.push("Please check consent.")
         document.querySelector(`input[name="consent"] + label`).classList.add(`text-red-500`)
@@ -71,13 +70,9 @@ export default function FormEnterpriseContactForm({ className }) {
         body: formData
       }  
 
-      console.log(options)
-
       fetch(`${WP_API_URL}/contact-form-7/v1/contact-forms/70/feedback`, options)
       .then(res => res.json())
       .then(data => {
-
-        console.log('message: ', data)
 
         if (data.status == 'mail_sent') {
           el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Message sent!"</div>`

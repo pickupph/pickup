@@ -1,6 +1,9 @@
 // Packages
 import { useState } from 'react'
 
+//
+import { WP_API_URL } from '../config/constants'
+
 // Data
 import dataForm from '../fakeData/formBookADemo.json'
 import Button from './templates/button'
@@ -40,25 +43,50 @@ export default function FormBookADemo({ className }) {
 
       })
 
+      if(!e.target.consent.checked) {
+        errors.push("Please check consent.")
+        document.querySelector(`input[name="consent"] + label`).classList.add(`text-red-500`)
+      } else {
+        document.querySelector(`input[name="consent"] + label`).classList.remove(`text-red-500`)
+      }
+
       // Validate
       if(errors.length > 0) {
         setStateIsLoading(false)
         return false
       }
 
-      /**
-       * 
-       * Do fetch call here after validation success
-       * 
-       */
-      if(true) {
-        el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Message sent!"</div>`
-      } else {
-        el.innerHTML = `<div class="text-center bg-red-50 text-red-500 py-3">Message failed!</div>`
-      }
+      //
+      //
+      let formData = new FormData()
+      formData.append('fullname', e.target.fullname.value)
+      formData.append('businessname', e.target.businessname.value)
+      formData.append('mobilephone', e.target.mobilephone.value)
+      formData.append('email', e.target.email.value)
+      formData.append('message', e.target.message.value)
 
-       e.target.reset()
-       setStateIsLoading(false)
+      const options = {
+        method: "POST",
+        body: formData
+      }  
+
+      fetch(`${WP_API_URL}/contact-form-7/v1/contact-forms/82/feedback`, options)
+      .then(res => res.json())
+      .then(data => {
+
+        if (data.status == 'mail_sent') {
+          el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Message sent!"</div>`
+          e.target.reset()
+          
+        } else {
+          el.innerHTML = `<div class="text-center bg-red-50 text-red-500 py-3">Message failed!</div>`
+        }
+
+        setStateIsLoading(false)
+
+
+      })
+      .catch(err => console.log('err: ', err))
 
   }
 
