@@ -1,0 +1,62 @@
+[
+  {
+    "type": "text",
+    "name": "fullname",
+    "label": "Enter your full name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Full name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "brandname",
+    "label": "Enter brand name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Business name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "businessname",
+    "label": "Enter business name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Business name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "mobilephone",
+    "label": "Enter your mobile number",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Mobile number is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "email",
+    "label": "Email address*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Email address is required."
+    }
+  },
+  {
+    "type": "textarea",
+    "name": "message",
+    "label": "Message*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Message is required."
+    }
+  }
+]

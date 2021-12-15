@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 // Components
 import LayoutDefault from "../components/templates/layoutDefault"
-import FormBookADemo from "../components/formBookADemo"
+import FormEnterpriseContactForm from '../components/formEnterpriseContactForm'
 
 export default function Home() {
 
@@ -64,12 +64,10 @@ export default function Home() {
 
       <div className='container mx-auto px-5 py-10 max-w-[1024px]'>
         <div className='bg-white p-10 border rounded-md'>
-          <h2 className='text-center text-[40px] capitalize mb-5'>Contact us</h2>
-          <FormBookADemo />
+          <h2 className='text-center text-[20px] md:text-[40px] capitalize mb-5'>Enterprise Contact us</h2>
+          <FormEnterpriseContactForm />
         </div>
-        
       </div>
-      
 
     </LayoutDefault>
     
