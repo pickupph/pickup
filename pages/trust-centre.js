@@ -29,10 +29,6 @@ export default function TrustCentre() {
                 "label": "Terms of Service",
                 "url": "/terms-of-service"
               },
-              {
-                "label": "Community Standards",
-                "url": "/community-standards"
-              }
             ].map((item, i)=>(
               <li key={i}>
                 <Link href={item.url}>
@@ -42,7 +38,7 @@ export default function TrustCentre() {
             ))
           }
         </ul>
-        <hr className="my-5 text-gray-300" />
+        {/* <hr className="my-5 text-gray-300" />
         <ul className="mt-6 list-disc list-inside">
           {
             [
@@ -58,7 +54,7 @@ export default function TrustCentre() {
               </li>
             ))
           }
-        </ul>
+        </ul> */}
       </div>
 
       {/** */}
