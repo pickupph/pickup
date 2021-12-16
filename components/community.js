@@ -8,7 +8,7 @@ export default function Community() {
     <section className="py-[40px]">
       <div className="container mx-auto p-5">
         <h2 className="text-[32px] text-[#131415]">Join the Pickup community today</h2>
-        <p className="text-[20px] text-[#53585f] max-w-[760px]">The world's biggest influencers, creators, publishers and brands use Linktree in their marketing strategy.</p>
+        <p className="text-[20px] text-[#53585f] max-w-[760px]">The world's biggest influencers, creators, publishers and brands use Pickup.ph in their marketing strategy.</p>
       </div>
 
       <div className="py-8 container mx-auto overflow-visible p-5">

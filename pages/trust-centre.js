@@ -17,7 +17,7 @@ export default function TrustCentre() {
 
       <div className="container mx-auto px-5 py-5 md:py-10 max-w-[700px] mb-[64px]">
         <h1 className="text-[40px]">Trust Centre</h1>
-        <p className="text-[16px] leading-relaxed">We take data security and privacy seriously at Linktree. In the Trust Center you'll find general information to give you confidence in the way we store the data you entrust to us.</p>
+        <p className="text-[16px] leading-relaxed">We take data security and privacy seriously at Pickup.ph. In the Trust Center you'll find general information to give you confidence in the way we store the data you entrust to us.</p>
         <ul className="mt-6 list-disc list-inside">
           {
             [
