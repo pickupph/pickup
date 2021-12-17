@@ -60,6 +60,16 @@
     }
   },
   {
+    "type": "radio",
+    "name": "accounttype",
+    "label": "(if yes) As a Merchant / Customer",
+    "validation": {
+      "required": false,
+      "valid-feedback": "",
+      "invalid-feedback": "Item is required."
+    }
+  },
+  {
     "type": "textarea",
     "name": "socialmedia",
     "label": "Which of your social profiles has the most engagement? Add the link below.*",
