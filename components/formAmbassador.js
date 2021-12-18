@@ -59,13 +59,18 @@ export default function FormAmbassador({ className }) {
       }
 
       //
-      //
       let formData = new FormData()
-      formData.append('fullname', e.target.fullname.value)
-      formData.append('businessname', e.target.businessname.value)
+      formData.append('firstname', e.target.firstname.value)
+      formData.append('lastname', e.target.lastname.value)
       formData.append('mobilephone', e.target.mobilephone.value)
       formData.append('email', e.target.email.value)
-      formData.append('message', e.target.message.value)
+      formData.append('socialmedia', e.target.socialmedia.value)
+      formData.append('location', e.target.location.value)
+      formData.append('haveused', e.target.haveused.value)
+      formData.append('accounttype', e.target.accounttype.value)
+      formData.append('paidsponsor', e.target.paidsponsor.value)
+      formData.append('costperpost', e.target.costperpost.value)
+      formData.append('appeal', e.target.appeal.value)
 
       const options = {
         method: "POST",

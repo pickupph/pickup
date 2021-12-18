@@ -4,7 +4,6 @@ export default function Footer({ className }) {
       <div className="container mx-auto">
          <p>Copyright © 2020 Pickup.ph. This site was made with ❤️ in the Philippines.</p>
       </div>
-     
     </footer>
   )
 }

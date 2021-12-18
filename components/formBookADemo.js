@@ -115,8 +115,8 @@ export default function FormBookADemo({ className }) {
       }
 
       <div className="text-left text-[14px] flex items-start">
-        <input type="checkbox" name="consent" className="mr-2 mt-1" />
-        <label>In submitting your expression of interest and providing us with your contact details, you are consenting to us contacting you and providing you with information and details about the pickup.ph Platforms and pickup.ph Services. Any information that you provide to us will be subject to the terms of our Privacy Policy and any Terms and Conditions on our website.</label>
+        <input id='consent' type="checkbox" name="consent" className="mr-2 mt-1" />
+        <label htmlFor='consent'>In submitting your expression of interest and providing us with your contact details, you are consenting to us contacting you and providing you with information and details about the pickup.ph Platforms and pickup.ph Services. Any information that you provide to us will be subject to the terms of our Privacy Policy and any Terms and Conditions on our website.</label>
       </div>
 
       <div data-form-message></div>
