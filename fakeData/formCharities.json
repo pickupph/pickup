@@ -1,0 +1,62 @@
+[
+  {
+    "type": "text",
+    "name": "charityname",
+    "label": "Charity name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Charity name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "charityurl",
+    "label": "Charity URL",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Charity URL is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "contactname",
+    "label": "Contact name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Contact name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "mobilephone",
+    "label": "Contact number",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Contact number is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "email",
+    "label": "Email address*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Email address is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "intent",
+    "label": "What do you intend to use pickup.ph for?",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Input is required."
+    }
+  }
+]
