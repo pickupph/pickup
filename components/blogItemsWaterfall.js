@@ -1,7 +1,7 @@
-//
 import CardBlogItem from "./cardBlogItem"
 
 export default function BlogItemsWaterfall({ collection, className }) {
+
   return (
     <section className={`py-[28px] md:py-[56px] px-5 ${className}`}>
       <div className="container mx-auto w-full">

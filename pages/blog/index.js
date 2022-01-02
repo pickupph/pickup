@@ -1,9 +1,6 @@
 // Packages
 import { useEffect } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 import { useSelector } from 'react-redux'
-import moment from 'moment'
 
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
@@ -14,7 +11,6 @@ import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 
 // Data
 import LayoutBlog from '../../components/templates/layoutBlog'
-import CardBlogItem from '../../components/cardBlogItem'
 import BlogItemBanner from '../../components/blogItemBanner'
 import BlogItemsWaterfall from '../../components/blogItemsWaterfall'
 import BlogItemsAlternate from '../../components/blogItemsAlternate'
@@ -46,7 +42,6 @@ export default function Blog({ collection, collection2ndTo4th, collection4thOnwa
       <BlogItemsWaterfall collection={collection2ndTo4th} />
 
       {/** Alternate */}
-      {console.log('onwards: ', collection)}
       <BlogItemsAlternate collection={collection4thOnwards} />
 
     </LayoutBlog>

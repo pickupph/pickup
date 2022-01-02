@@ -3,7 +3,20 @@ import Link from 'next/link'
 import moment from 'moment'
 import Image from 'next/image'
 
+//
+import useBlogCategory from '../hooks/useBlogCategory'
+
+//
+import IsLoading from './isLoading'
+
 export default function BlogItemBanner({ blogItem, className }) {
+
+  const { category, categoryIsLoading, categoryIsError }  = useBlogCategory(blogItem.categories[0])
+
+  if(categoryIsLoading) {
+    return <IsLoading />
+  }
+
   return (
     <section className={`py-[28px] md:py-[56px] ${className}`}>
       <div className="container mx-auto w-full">
@@ -14,7 +27,7 @@ export default function BlogItemBanner({ blogItem, className }) {
               <span className="font-semibold text-[18px] text-[#8a86e5]">Category</span>
             </div>
             <h1 className="text-[36px] md:text-[72px] font-bold leading-tight tracking-tight text-[#202020] my-3 px-5">
-              <Link href={`/blog/${blogItem.slug}`}>
+              <Link href={`/blog/${category.slug}/${blogItem.slug}`}>
                 <a 
                   className="bg-no-repeat group-hover:bg-gradient-to-r from-[#28bf7b] via-[#2ed3ba] via-[#44c2d7] via-[#5aa2dc] to-[#8a86e5] bg-bottom bg-[length:100%_8px]"
                   style={{textShadow: `white 4px 4px, white 4px -4px, white -4px 4px, white -4px -4px`}}
