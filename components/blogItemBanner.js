@@ -11,7 +11,11 @@ import IsLoading from './isLoading'
 
 export default function BlogItemBanner({ blogItem, className }) {
 
-  const { category, categoryIsLoading, categoryIsError }  = useBlogCategory(blogItem.categories[0])
+  const { category, categoryIsLoading, categoryIsError }  = useBlogCategory(blogItem?.categories[0])
+
+  if(!blogItem) {
+    return <p>No data.</p>
+  }
 
   if(categoryIsLoading) {
     return <IsLoading />
@@ -24,7 +28,7 @@ export default function BlogItemBanner({ blogItem, className }) {
           <div>
             <div className="flex space-x-5 px-5">
               <span className="text-[18px] text-[#202020] font-semibold">7 min read</span>
-              <span className="font-semibold text-[18px] text-[#8a86e5]">Category</span>
+              <span className="font-semibold text-[18px] text-[#8a86e5]"><Link href={`/blog/${category.slug}`}><a>{category.name}</a></Link></span>
             </div>
             <h1 className="text-[36px] md:text-[72px] font-bold leading-tight tracking-tight text-[#202020] my-3 px-5">
               <Link href={`/blog/${category.slug}/${blogItem.slug}`}>
