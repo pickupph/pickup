@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import LayoutBrand from "../../../components/templates/layoutBrand"
 import useBrand from "../../../hooks/useBrand"
+import Loading from "../../../components/loading"
 
 
 export default function Brand() {
@@ -25,7 +26,7 @@ export default function Brand() {
   }, [_brand])
 
   if(_brandIsLoading) {
-    return <p>Loading</p>
+    return <Loading />
   }
 
   if(_brandIsError || _brand.result=="error") {
@@ -56,10 +57,11 @@ export default function Brand() {
       <div>
         {
           brand.stores.length > 0 ?
-          <div>
+          <div className="text-center">
+            <h3 className="text-[20px] mb-5">Store Locations:</h3>
             {
               brand.stores.map(store=>(
-                <div key={store._id}>
+                <div key={store._id} className="border py-3 px-5 rounded-lg transition-all ease-in-out duration-300 hover:bg-[#cccccc]">
                   <p>
                     <Link href={`/brands/${brand.brand_url}/${store._id}`}><a>{store.geocode_address_string}</a></Link>
                   </p>
