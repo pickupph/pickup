@@ -10,3 +10,7 @@ export const CURRENCY_NAME = "pesos"
 
 export const WP_API_URL = process.env.NEXT_PUBLIC_WPAPI
 export const WP_PER_PAGE = 100
+
+export const API_BASEURL = process.env.API_BASEURL
+export const API_BASEURL_BRANDS = `${API_BASEURL}/branded-website/brands`
+export const API_BASEURL_STORES = `${API_BASEURL}/branded-website/stores`
