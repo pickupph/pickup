@@ -20,7 +20,7 @@ export default function Brand() {
   console.log(_brand)
 
   const brand = _brand
-  const store = _store.store
+  const store = _store?.store || {}
 
   console.log('store: ', store)
 
