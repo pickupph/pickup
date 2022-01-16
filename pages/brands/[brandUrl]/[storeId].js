@@ -8,6 +8,7 @@ import LayoutBrand from "../../../components/templates/layoutBrand"
 import useBrand from "../../../hooks/useBrand"
 import useStore from "../../../hooks/useStore"
 import Loading from "../../../components/loading"
+import { currency } from "../../../lib/helper"
 
 
 export default function Brand() {
@@ -66,7 +67,9 @@ export default function Brand() {
   }
 
   return (
-    <LayoutBrand>
+    <LayoutBrand
+      classNameMain={`overflow-hidden`}
+    >
 
       {/** Header branch */}
       <section className="p-5 flex space-x-5 border-b">
@@ -89,7 +92,7 @@ export default function Brand() {
         
       </section>
 
-      <div className="px-5 mx-auto py-5 border-b">
+      <div className="px-5 mx-auto py-5 border-b overflow-auto">
         <div className="">
           
           <ul className="flex justify-between space-x-5 flex-grow items-center">
@@ -103,7 +106,7 @@ export default function Brand() {
             </li>
             {
               store.categories.map((category,i)=>(
-                <li key={i} className="px-5"><a href="#" onClick={e=>setStateActiveCategory(category.category_name)} className={`${stateActiveCategory==category.category_name?`font-bold`:``}`}>{category.category_name}</a></li>
+                <li key={i} className="px-5"><a href="#" onClick={e=>setStateActiveCategory(category.category_name)} className={`${stateActiveCategory==category.category_name?`font-bold`:``} whitespace-nowrap`}>{category.category_name}</a></li>
               ))
             }
           </ul>
@@ -122,9 +125,13 @@ export default function Brand() {
                 <div className="relative object-contain min-h-[100px] w-full">
                   <Image src={item.item_id.image_url} layout="responsive" width={100} height={100} />
                 </div>
-                <h3 className="p-5">
-                  {item.item_id.name}
-                </h3>
+                <div className="p-5 grid gap-3 grid-flow-col">
+                  <h3 className="">
+                    {item.item_id.name}
+                  </h3>
+                  <p className="font-bold">P{currency(parseInt(item.item_id.price))}</p>
+                </div>
+                
               </li>
             ))
           }
