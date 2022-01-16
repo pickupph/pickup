@@ -1,7 +1,8 @@
+import { useRouter } from "next/router"
+import { useEffect } from "react"
+
 export default function Brands() {
-  return (
-    <div>
-      brand
-    </div>
-  )
+  const router = useRouter()
+  useEffect(()=>{router.push(`/brands/crosta`)},[])
+  return <></>
 }
