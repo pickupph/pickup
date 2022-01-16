@@ -111,7 +111,7 @@ export default function Brand() {
       </div>
 
       <div className="p-5 bg-[#f4f4f4]">
-         Found {stateMenu.length} items{stateActiveCategory!==""?` in category ${stateActiveCategory}`:``}{stateSearch!==""?` with search ${stateSearch}`:``}.
+         Found {stateMenu?.length} items{stateActiveCategory!==""?` in category ${stateActiveCategory}`:``}{stateSearch!==""?` with search ${stateSearch}`:``}.
       </div>
 
       <div className="p-5">
