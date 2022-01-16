@@ -28,10 +28,10 @@ export default function BlogItemBanner({ blogItem, className }) {
           <div>
             <div className="flex space-x-5 px-5">
               <span className="text-[18px] text-[#202020] font-semibold">7 min read</span>
-              <span className="font-semibold text-[18px] text-[#8a86e5]"><Link href={`/blog/${category.slug}`}><a>{category.name}</a></Link></span>
+              <span className="font-semibold text-[18px] text-[#8a86e5]"><Link href={`/blog/${category?.slug}`}><a>{category?.name}</a></Link></span>
             </div>
             <h1 className="text-[36px] md:text-[72px] font-bold leading-tight tracking-tight text-[#202020] my-3 px-5">
-              <Link href={`/blog/${category.slug}/${blogItem.slug}`}>
+              <Link href={`/blog/${category?.slug}/${blogItem?.slug}`}>
                 <a 
                   className="bg-no-repeat group-hover:bg-gradient-to-r from-[#28bf7b] via-[#2ed3ba] via-[#44c2d7] via-[#5aa2dc] to-[#8a86e5] bg-bottom bg-[length:100%_8px]"
                   style={{textShadow: `white 4px 4px, white 4px -4px, white -4px 4px, white -4px -4px`}}
@@ -39,7 +39,7 @@ export default function BlogItemBanner({ blogItem, className }) {
               </Link>
             </h1>
             <div className='px-5'>
-              <div>{blogItem._embedded.author[0].name}</div>
+              <div>{blogItem?._embedded.author[0].name}</div>
               <div>{moment(blogItem.date).format('MMM Do, YYYY')}</div>
             </div>
           </div>
@@ -49,10 +49,10 @@ export default function BlogItemBanner({ blogItem, className }) {
                 <a className="transition-all duration-500 ease-out relative inline-block right-[16px] bottom-[12px] group-hover:right-[9px] group-hover:bottom-[4px]">
                   <Image 
                     className="rounded-sm block"
-                    src={blogItem._embedded['wp:featuredmedia'][0].source_url} 
-                    width={blogItem._embedded['wp:featuredmedia'][0].media_details.width}
-                    height={blogItem._embedded['wp:featuredmedia'][0].media_details.height}
-                    alt={blogItem._embedded['wp:featuredmedia'][0].alt_text}
+                    src={blogItem?._embedded['wp:featuredmedia'][0]?.source_url} 
+                    width={blogItem?._embedded['wp:featuredmedia'][0]?.media_details.width}
+                    height={blogItem?._embedded['wp:featuredmedia'][0]?.media_details.height}
+                    alt={blogItem?._embedded['wp:featuredmedia'][0]?.alt_text}
                   />
                 </a>
               </Link>
