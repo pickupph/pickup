@@ -14,7 +14,7 @@ export default function CardBlogItem({ item }) {
 	return (
 		<div>
 			<div>
-				<Link href={`/blog/${category.slug}/${item.slug}`}>
+				<Link href={`/blog/${category?.slug}/${item?.slug}`}>
 					<a>
 						<Image 
 							src={item._embedded['wp:featuredmedia'][0].source_url} 
@@ -29,7 +29,7 @@ export default function CardBlogItem({ item }) {
 			</div>
 			<div className='py-5'>
 				<h3 className='text-[20px] font-semibold'>
-					<Link href={`/blog/${category.slug}/${item.slug}`}><a>{item.title.rendered}</a></Link>
+					<Link href={`/blog/${category?.slug}/${item?.slug}`}><a>{item?.title.rendered}</a></Link>
 				</h3>
 			</div>
 		</div>
