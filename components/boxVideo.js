@@ -39,11 +39,11 @@ export default function BoxVideo({
 
         {/** Right */}
         <div className="p-5 flex justify-center">
-          <div className="max-w-narrowSM">
-            <h2 className="text-fs-subHeaderSM md:text-fs-subHeader mb-5">
+          <div className="max-w-[560px]">
+            <h2 className="text-[32px] md:text-[48px] mb-5">
               {title}
             </h2>
-            <p>
+            <p className="text-[20px] md:text-[24px]">
               {content}
             </p>
           </div>
