@@ -1,7 +1,7 @@
 [
   {
-    "label": "Feature 1",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "label": "Customise your Site",
+    "description": "Make your pickup site pop. Showcase your brand and menu items with custom images, logos, colours and buttons.",
     "image": {
       "src": "/images/feature-1.png",
       "height": 310,
@@ -9,8 +9,8 @@
     }
   },
   {
-    "label": "Feature 2",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "label": "Drive Traffic to Your Site",
+    "description": "Reap the benefits of pickup with proven marketing best practices, along with our marketing and promotions engine.",
     "image": {
       "src": "/images/feature-2.png",
       "height": 310,
@@ -18,8 +18,8 @@
     }
   },
   {
-    "label": "Feature 3",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "label": "Analytics With Actionable Insights",
+    "description": "Gain valuable insights into your business and customers; and discover which content is performing with your target audience",
     "image": {
       "src": "/images/feature-3.png",
       "height": 310,
@@ -27,8 +27,8 @@
     }
   },
   {
-    "label": "Feature 4",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "label": "Powerful Third-Party Integrations",
+    "description": "Collect website traffic information, turn on payments and delivery in confidence with our robust third-party connections.",
     "image": {
       "src": "/images/feature-4.png",
       "height": 310,

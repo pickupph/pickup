@@ -21,7 +21,7 @@ export default function Features({ className }) {
                     <h3 className="text-fs-boxSubHeader text-center my-5">{f.label}</h3>
                   </div>
                   <div className="text-fs-bodySM text-center leading-loose">
-                    <p>{f.description}</p>
+                    <p className='text-[20px] leading-relaxed'>{f.description}</p>
                   </div>
                 </div>
               </div>
