@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import LayoutDefault from "../components/templates/layoutDefault"
+import Bottom from "../components/bottom"
 
 import { SITE_NAME } from "../config/constants"
 
@@ -20,7 +21,7 @@ export default function About() {
         </div>
 
         <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto border-l-[6px] border-l-[#39e09b]">
-          <p className="text-[22px] md:text-[32px]">{SITE_NAME} makes your online content more discoverable, easier to manage and more likely to convert.</p>
+          <p className="text-[22px] md:text-[32px]">{SITE_NAME} is a merchant-first solution built by retailers for retailers to solve key problems we experienced first hand.</p>
         </div>
 
         <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px]">
@@ -71,6 +72,8 @@ export default function About() {
           </ul>
         </div>
       </div>
+
+      <Bottom />
 
     </LayoutDefault>
     
