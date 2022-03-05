@@ -1,11 +1,14 @@
 // Packages
 import Image from 'next/image'
+import { useState } from 'react'
 
 // Components
 import LayoutDefault from "../components/templates/layoutDefault"
 import FormEnterpriseContactForm from '../components/formEnterpriseContactForm'
 
 export default function Home() {
+
+  const [ stateEnterprise, setStateEnterprise ] = useState("")
 
   return (
     <LayoutDefault
@@ -51,7 +54,7 @@ export default function Home() {
               }
             }
           ].map((item, i)=>(
-            <div key={i} className='transition-all duration-300 ease-in-out border hover:border-primary2 rounded-lg bg-white flex flex-col items-center justify-between p-10 text-center'>
+            <div key={i} className={`transition-all duration-300 ease-in-out border hover:border-primary2 rounded-lg bg-white flex flex-col items-center justify-between p-10 text-center ${stateEnterprise==item.label?`border-primary2`:``}`} onClick={()=>setStateEnterprise(item.label)}>
               <div className='mb-1'>
                 <Image src={item.icon.src} height={80} width={80} alt={item.label} />
               </div>
@@ -65,7 +68,7 @@ export default function Home() {
       <div className='container mx-auto px-5 py-10 max-w-[1024px]'>
         <div className='bg-white p-10 border rounded-md'>
           <h2 className='text-center text-[20px] md:text-[40px] capitalize mb-5'>Enterprise Contact us</h2>
-          <FormEnterpriseContactForm />
+          <FormEnterpriseContactForm enterprise={stateEnterprise} />
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 // Packages
 import { useState } from 'react'
+import Link from "next/link"
 
 //
 import { WP_API_URL } from '../config/constants'
@@ -8,7 +9,7 @@ import { WP_API_URL } from '../config/constants'
 import dataForm from '../fakeData/formEnterpriseContactUs.json'
 import Button from './templates/button'
 
-export default function FormEnterpriseContactForm({ className }) {
+export default function FormEnterpriseContactForm({ enterprise, className }) {
 
   const [ stateIsLoading, setStateIsLoading ] = useState(false)
 
@@ -50,6 +51,11 @@ export default function FormEnterpriseContactForm({ className }) {
         document.querySelector(`input[name="consent"] + label`).classList.remove(`text-red-500`)
       }
 
+      if(!enterprise || enterprise=="") {
+        errors.push("Please select what will you use Pickup.ph for?")
+        document.querySelector(`[data-form-message]`).innerHTML = `<div class="border-red-500 p-3 bg-rose-200 text-red-500">Please select what will you use Pickup.ph for?</div>`
+      }
+
       // Validate
       if(errors.length > 0) {
         setStateIsLoading(false)
@@ -64,6 +70,7 @@ export default function FormEnterpriseContactForm({ className }) {
       formData.append('mobilephone', e.target.mobilephone.value)
       formData.append('email', e.target.email.value)
       formData.append('message', e.target.message.value)
+      formData.append('enterprise', e.target.enterprise.value)
 
       const options = {
         method: "POST",
@@ -116,10 +123,14 @@ export default function FormEnterpriseContactForm({ className }) {
 
       <div className="text-left text-[14px] flex items-start mb-[20px]">
         <input type="checkbox" name="consent" className="mr-2 mt-1" />
-        <label>In submitting your expression of interest and providing us with your contact details, you are consenting to us contacting you and providing you with information and details about the pickup.ph Platforms and pickup.ph Services. Any information that you provide to us will be subject to the terms of our Privacy Policy and any Terms and Conditions on our website.</label>
+        <label>In submitting your expression of interest and providing us with your contact details, you are consenting to us contacting you and providing you with information and details about the pickup.ph Platforms and pickup.ph Services. Any information that you provide to us will be subject to the terms of our <Link href="/privacy-policy"><a target={`_blank`}>Privacy Policy</a></Link> and any <Link href="/terms-of-service"><a target={`_blank`}>Terms and Conditions</a></Link> on our website.</label>
       </div>
 
       <div data-form-message></div>
+
+      <div>
+        <input type="hidden" name="enterprise" value={enterprise} />
+      </div>
 
       <div className="my-5">
         <Button 
