@@ -1,6 +1,7 @@
 // Components
 import FormAmbassador from "../components/formAmbassador"
 import LayoutDefault from "../components/templates/layoutDefault"
+import Bottom from "../components/bottom"
 
 export default function Testimonials() {
 
@@ -22,6 +23,8 @@ export default function Testimonials() {
       <div className="container mx-auto px-5 max-w-[780px]">
         <FormAmbassador />
       </div>
+
+      <Bottom />
 
     </LayoutDefault>
     

@@ -4,6 +4,7 @@ import Link from 'next/link'
 // Components
 import FormCharities from '../components/formCharities'
 import LayoutDefault from "../components/templates/layoutDefault"
+import Bottom from "../components/bottom"
 
 // 
 import { SITE_NAME } from "../config/constants"
@@ -25,9 +26,11 @@ export default function Charities() {
         <p className="mb-[20px]">You need to have an existing {SITE_NAME} free account to be eligible. <Link href="/signup"><a className='underline'>Create one here</a></Link> first. Then, take a minute to fill out the form below. Once we've reviewed your answers, you'll be upgraded to PRO - free, for life.</p>
       </div>
 
-      <div className="container mx-auto px-5 max-w-[780px]">
+      <div className="container mx-auto px-5 max-w-[780px] mb-20">
         <FormCharities />
       </div>
+
+    <Bottom />
 
     </LayoutDefault>
     

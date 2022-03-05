@@ -4,6 +4,7 @@ import Link from 'next/link'
 // Components
 import FormReport from '../components/formReport'
 import LayoutDefault from "../components/templates/layoutDefault"
+import Bottom from "../components/bottom"
 
 // 
 import { SITE_NAME } from "../config/constants"
@@ -26,9 +27,11 @@ export default function ReportAViolation() {
         <p className="mb-[20px]">Please note this form is not for general support requests. If you need help with your own {SITE_NAME} account, please contact support on <a href="mailto:support@pickup.ph" className='underline'>support@pickup.ph</a> or visit our <Link href="/faqs"><a className='underline'>support portal</a></Link>.</p>
       </div>
 
-      <div className="container mx-auto px-5 max-w-[780px]">
+      <div className="container mx-auto px-5 max-w-[780px] mb-20">
         <FormReport />
       </div>
+
+      <Bottom />
 
     </LayoutDefault>
     

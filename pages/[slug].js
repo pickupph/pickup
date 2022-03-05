@@ -3,6 +3,7 @@ import { WP_API_URL, WP_PER_PAGE } from "../config/constants"
 
 // Components
 import LayoutDefault from "../components/templates/layoutDefault"
+import Bottom from "../components/bottom"
 
 export default function Page({ _page }) {
 
@@ -14,11 +15,16 @@ export default function Page({ _page }) {
         title: page.title.rendered
       }}
     >
+      
+      <section className={`p-5 w-full`}>
+        <div className="container mx-auto">
+          <h1 className="text-[40px] mb-5">{page.title.rendered}</h1>
+          <div className="editor" dangerouslySetInnerHTML={{__html: page.content.rendered}} />
+        </div>
+      </section>
+      
 
-      <div className="container mx-auto py-5 px-5 md:py-10">
-        <h1 className="text-[40px] mb-5">{page.title.rendered}</h1>
-        <div className="editor" dangerouslySetInnerHTML={{__html: page.content.rendered}} />
-      </div>
+      <Bottom />
 
     </LayoutDefault>
     

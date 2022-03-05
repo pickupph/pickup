@@ -5,6 +5,7 @@ import { useSelector } from "react-redux"
 // Components
 import LayoutDefault from "../components/templates/layoutDefault"
 import BlockPricing from "../components/blockPricing"
+import Bottom from "../components/bottom"
 
 export default function Home() {
 
@@ -54,6 +55,8 @@ export default function Home() {
         ))
       }
       </div>
+
+      <Bottom />
 
     </LayoutDefault>
     
