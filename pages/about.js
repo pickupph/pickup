@@ -31,6 +31,10 @@ export default function About() {
         </div>
 
         <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px]">
+          <p className='text-[20px] md:text-[24px] text-[#263238]'>We&apos;re a tool for connecting customers to your online store, managing menus, upcoming orders, payments, deliveries and analytics — without marketplace commissions</p>
+        </div>
+
+        <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px]">
           <h2 className='text-[24px] mb-3'>Build A Branded Store In Minutes</h2>
           <p>Instantly allow customers to place orders from your website, Facebook page, commission free with full payments and delivery integration in an all-in-one solution.</p>
         </div>
