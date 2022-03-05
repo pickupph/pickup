@@ -83,6 +83,17 @@ export default function About() {
           </div>
         </div>
 
+        <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px] leading-relaxed text-center">
+          <h2 className='text-[32px] md:text-[40px] text-center font-semibold capitalize mb-4'>
+            Come and join our fast-growing team
+            </h2>
+            <p className='text-[22px] mb-4'>Go to our Careers page or send us an email to <a href="mailto:careers@pickup.ph" className='text-primary2'>careers@pickup.ph</a></p>
+            <p>
+              <a className="text-fs-button md:text-fs-buttonLg px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90" href="#">Find a job at Pickup.ph</a>
+            </p>
+            
+        </div>
+
         <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px]">
           <h2 className='text-[24px] mb-3'>Build A Branded Store In Minutes</h2>
           <p>Instantly allow customers to place orders from your website, Facebook page, commission free with full payments and delivery integration in an all-in-one solution.</p>
