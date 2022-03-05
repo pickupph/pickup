@@ -18,7 +18,7 @@ export default function Home() {
       }}
       classNameMain='bg-gray-100'
     >
-
+      
       <div className="container mx-auto px-5 py-5 md:py-20 text-center">
         <h1 className="text-[40px] mb-[20px]">What will you use Pickup.ph for?</h1>
         <p className="text-[16px]">This helps us tailor your onboarding.</p>
