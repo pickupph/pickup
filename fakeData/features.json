@@ -1,6 +1,6 @@
 [
   {
-    "label": "Customise your Site",
+    "label": "Customise<br />your Pickup Site",
     "description": "Make your pickup site pop. Showcase your brand and menu items with custom images, logos, colours and buttons.",
     "image": {
       "src": "/images/feature-1.png",
@@ -9,7 +9,7 @@
     }
   },
   {
-    "label": "Drive Traffic to Your Site",
+    "label": "Drive Traffic<br />to Your Site",
     "description": "Reap the benefits of pickup with proven marketing best practices, along with our marketing and promotions engine.",
     "image": {
       "src": "/images/feature-2.png",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "label": "Analytics With Actionable Insights",
+    "label": "Analytics with Actionable Insights",
     "description": "Gain valuable insights into your business and customers; and discover which content is performing with your target audience",
     "image": {
       "src": "/images/feature-3.png",

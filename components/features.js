@@ -18,7 +18,7 @@ export default function Features({ className }) {
                     <Image src={f.image.src} width={310} height={310} alt={f.label} className="shadow hover:shadow-md" />
                   </div>
                   <div>
-                    <h3 className="text-fs-boxSubHeader text-center my-5">{f.label}</h3>
+                    <h3 className="text-fs-boxSubHeader text-center my-5" dangerouslySetInnerHTML={{__html: f.label}} />
                   </div>
                   <div className="text-fs-bodySM text-center leading-loose">
                     <p className='text-[20px] leading-relaxed'>{f.description}</p>
