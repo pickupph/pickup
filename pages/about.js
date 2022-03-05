@@ -26,7 +26,7 @@ export default function About() {
 
         <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px]">
           <div className='box-shadow box-shadow--blue'>
-            <Image src="/images/placeholders/about-us.jpg" width={1400} height={787} alt="Pickup PH" layout='responsive' className='rounded-lg block cover' />
+            <Image src="/images/about-us.png" width={1400} height={787} alt="Pickup PH" layout='responsive' className='rounded-lg block cover' />
           </div>
         </div>
 
