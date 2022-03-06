@@ -192,8 +192,8 @@ export default function HowItWorks() {
               }
             </Swiper>
 
-            <div>
-
+            <div className="text-center mt-10">
+              <Button type="link" link="/book-a-demo" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
             </div>
 
           </div>
