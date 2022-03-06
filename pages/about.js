@@ -34,7 +34,7 @@ export default function About() {
           <p className='text-[20px] md:text-[24px] text-[#263238]'>We&apos;re a tool for connecting customers to your online store, managing menus, upcoming orders, payments, deliveries and analytics — without marketplace commissions</p>
         </div>
 
-        <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px] leading-relaxed">
+        <div className="py-1 max-w-[780px] md:px-[30px] mx-auto my-[50px] leading-relaxed">
           <h2 className='text-[32px] md:text-[48px] mb-10'>
             Our Story
           </h2>
@@ -50,7 +50,7 @@ export default function About() {
           
         </div>
 
-        <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px] leading-relaxed">
+        <div className="py-1 max-w-[780px] md:px-[30px] mx-auto my-[50px] leading-relaxed">
           <h2 className='text-[32px] md:text-[48px] mb-10 text-center font-semibold capitalize'>
             Our beliefs
           </h2>
@@ -83,7 +83,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="py-1 max-w-[780px] px-[15px] md:px-[30px] mx-auto my-[50px] leading-relaxed text-center">
+        <div className="py-1 max-w-[780px] md:px-[30px] mx-auto my-[50px] leading-relaxed text-center">
           <h2 className='text-[32px] md:text-[40px] text-center font-semibold capitalize mb-4'>
             Come and join our fast-growing team
             </h2>
