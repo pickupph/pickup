@@ -1,6 +1,7 @@
 // Components
 import FormBookADemo from "../components/formBookADemo"
 import LayoutDefault from "../components/templates/layoutDefault"
+import Bottom from "../components/bottom"
 
 export default function BookADemo() {
 
@@ -20,6 +21,8 @@ export default function BookADemo() {
         <FormBookADemo />
       </div>
 
+      <Bottom />
+      
     </LayoutDefault>
     
   )
