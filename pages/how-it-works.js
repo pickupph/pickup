@@ -1,5 +1,6 @@
 //
 import Image from "next/image"
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Components
 import LayoutDefault from "../components/templates/layoutDefault"
@@ -129,6 +130,77 @@ export default function HowItWorks() {
         <div className="h-[30px]"></div>
 
       </Section>
+
+      {/**  */}
+      <Section>
+        <div className="max-w-[1000px] mx-auto pt-5 md:pt-10 text-center">
+          <h2 className="text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Leading brands trust Pickup</h2>
+          <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">Industry leading restaurateurs, entrepreneurs, and brands use Pickup in their marketing strategy and you should too.</p>
+          <div className="mt-10">
+            <Image src="/images/placeholders/logos.jpg" width={4938} height={1477} alt="Logo placeholder" />
+          </div>
+        </div>
+      </Section>
+
+      {/** */}
+      <Section>
+        <div className="max-w-[1000px] mx-auto pt-5 md:pt-10 text-center">
+          <h2 className="text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Seamlessly integrated payments and delivery</h2>
+          <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">We have already integrated best-in-breed partners so that you can enjoy a turnkey payment and delivery solution.</p>
+          <div className="py-10">
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={2}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+              breakpoints={{
+                768: {
+                  width: 768,
+                  slidesPerView: 4,
+                  spaceBetween: 50
+                }
+              }}
+            >
+              {
+                [
+                  {
+                    "label": "Visa"
+                  },
+                  {
+                    "label": "Mastercard"
+                  },
+                  {
+                    "label": "Gcash"
+                  },
+                  {
+                    "label": "Grab"
+                  },
+                  {
+                    "label": "Lalamove"
+                  },
+                  {
+                    "label": "PayMaya"
+                  },
+                  {
+                    "label": "GrabPay"
+                  }
+                ].map((item, i)=>(
+                  <SwiperSlide key={i}>
+                    <div className="p-[20px] text-[20px] font-semibold border rounded-[15px]">{item.label}</div>
+                  </SwiperSlide>
+                ))
+              }
+            </Swiper>
+
+            <div>
+
+            </div>
+
+          </div>
+        </div>
+      </Section>
+
+      <div className="h-[60px]"></div>
 
       <Bottom />
 
