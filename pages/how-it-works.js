@@ -5,6 +5,7 @@ import Image from "next/image"
 import LayoutDefault from "../components/templates/layoutDefault"
 import Section from "../components/templates/section"
 import Button from "../components/templates/button"
+import Bottom from "../components/bottom"
 
 export default function HowItWorks() {
 
@@ -15,6 +16,7 @@ export default function HowItWorks() {
       }}
     >
 
+      {/** */}
       <Section>
         <div className="max-w-[1000px] mx-auto py-10">
           <div className="grid md:grid-cols-2 items-center gap-10 md:gap-20">
@@ -31,6 +33,104 @@ export default function HowItWorks() {
           </div>
         </div>
       </Section>
+
+      {/**  */}
+      <Section className={`bg-[#fafafc]`}>
+        <div className="max-w-[852px] mx-auto pt-5 md:pt-10 text-center">
+          <h2 className="text-[44px] font-semibold mb-8">Breadth of solutions</h2>
+          <p className="text-[18px] lg:text-[20px]">Pickup is a cloud-based application that is built by retailers specifically for retailers. It is lightning-fast and intuitive app that your customers and employees will love to use.</p>
+        </div>
+      </Section>
+
+      {/**  */}
+      <Section className={`bg-[#fafafc]`}>
+        <div className="max-w-[1000px] mx-auto py-10 text-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-20">
+
+            {/** One */}
+            <div className="hidden lg:block">
+              <div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">QR Table Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">Increase customer spend 20-40% by using Pickup, while creating a seamless ordering experience. Deliver to table or pickup at collection point.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Pickup in-Store</h3>
+                  <p className="text-[18px] text-[#888888]">Allow your customers to skip the queue; order online and send an automated notification for them to collect for pickup once the order is ready.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Customer Delivery</h3>
+                  <p className="text-[18px] text-[#888888]">Customers can order from the comfort of their own home, have it delivered directly to their doorstep, with real-time updates along with way.</p>
+                </div>
+              </div>
+
+              <div className="lg:hidden">
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Cashier Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">The cashier can place orders and send a payment link to customers, allowing the cashier to move on to the next customer faster.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Cloud Kitchen Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">Allow customers to order items with different brands from a single cloud kitchen, with a single payment and all items delivered in a single delivery.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Food Hall Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">Provide an exceptional experience with patrons by allowing them to browse all vendors, place orders and get notified when the food is ready - no buzzers needed.</p>
+                </div>
+              </div>
+            </div>
+
+            {/** Two */}
+            <div className="flex items-start lg:items-center justify-center">
+              <div className="sticky top-[120px]">
+                <Image src="/images/placeholders/smartphone.png" width={298} height={512} alt="Placeholder" />
+              </div>
+            </div>
+
+            {/** Three */}
+            <div>
+              <div className="lg:hidden">
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">QR Table Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">Increase customer spend 20-40% by using Pickup, while creating a seamless ordering experience. Deliver to table or pickup at collection point.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Pickup in-Store</h3>
+                  <p className="text-[18px] text-[#888888]">Allow your customers to skip the queue; order online and send an automated notification for them to collect for pickup once the order is ready.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Customer Delivery</h3>
+                  <p className="text-[18px] text-[#888888]">Customers can order from the comfort of their own home, have it delivered directly to their doorstep, with real-time updates along with way.</p>
+                </div>
+              </div>
+
+              <div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Cashier Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">The cashier can place orders and send a payment link to customers, allowing the cashier to move on to the next customer faster.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Cloud Kitchen Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">Allow customers to order items with different brands from a single cloud kitchen, with a single payment and all items delivered in a single delivery.</p>
+                </div>
+                <div className="mb-10 text-left">
+                  <h3 className="text-[26px] mb-3 font-bold">Food Hall Ordering</h3>
+                  <p className="text-[18px] text-[#888888]">Provide an exceptional experience with patrons by allowing them to browse all vendors, place orders and get notified when the food is ready - no buzzers needed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center">
+          <Button type="link" link="/book-a-demo" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
+        </div>
+
+        <div className="h-[30px]"></div>
+
+      </Section>
+
+      <Bottom />
 
     </LayoutDefault>
     
