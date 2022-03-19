@@ -54,7 +54,7 @@ export default function BannerMain({ className }) {
           </div>
           <form className="flex-grow w-full">
             <div>
-              <input type="text" name="brandname" placeholder="yourbrandhere" className="text-[24px] md:text-[32px] p-0 m-0 leading-0 text-right w-full border-none focus:outline-none outline-none active:outline-none ring-0 focus:ring-0 text-gray-500 animate-pulse" />
+              <input type="text" name="brandname" placeholder="yourbrandhere|" className="text-[24px] md:text-[32px] p-0 m-0 leading-0 text-right w-full border-none focus:outline-none outline-none active:outline-none ring-0 focus:ring-0 text-gray-500 animate-pulse" />
             </div>  
           </form>
           <div className="text-[24px] md:text-[32px] pr-[30px]">.pickup.ph</div>

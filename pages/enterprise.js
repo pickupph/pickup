@@ -24,7 +24,7 @@ export default function Home() {
         <p className="text-[16px]">This helps us tailor your onboarding.</p>
       </div>
 
-      <div className='container mx-auto grid md:grid-cols-3 gap-[30px] px-5 max-w-[1024px]'>
+      <div className='container mx-auto grid grid-cols-3 gap-[15px] sm:gap-[30px] px-5 max-w-[1024px]'>
         {
           [
             {
@@ -55,12 +55,12 @@ export default function Home() {
               }
             }
           ].map((item, i)=>(
-            <div key={i} className={`transition-all duration-300 ease-in-out border hover:border-primary2 rounded-lg bg-white flex flex-col items-center justify-between p-10 text-center ${stateEnterprise==item.label?`border-primary2`:``}`} onClick={()=>setStateEnterprise(item.label)}>
+            <div key={i} className={`transition-all duration-300 ease-in-out border hover:border-primary2 rounded-lg bg-white flex flex-col items-center md:justify-between p-3 md:p-10 text-center ${stateEnterprise==item.label?`border-primary2`:``}`} onClick={()=>setStateEnterprise(item.label)}>
               <div className='mb-1'>
                 <Image src={item.icon.src} height={80} width={80} alt={item.label} />
               </div>
               <h3 className='mb-1 font-semibold'>{item.label}</h3>
-              <p>{item.content}</p>
+              <p className='hidden md:inline-block'>{item.content}</p>
             </div>
           ))
         }
