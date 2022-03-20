@@ -6,6 +6,7 @@ import { useState } from 'react'
 import LayoutDefault from "../components/templates/layoutDefault"
 import FormEnterpriseContactForm from '../components/formEnterpriseContactForm'
 import Bottom from "../components/bottom"
+import Divider from '../components/divider'
 
 export default function Home() {
 
@@ -72,6 +73,8 @@ export default function Home() {
           <FormEnterpriseContactForm enterprise={stateEnterprise} />
         </div>
       </div>
+
+      <Divider className={`h-[60px] bg-white`} />
 
       <Bottom />
 
