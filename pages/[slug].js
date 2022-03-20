@@ -17,7 +17,7 @@ export default function Page({ _page }) {
     >
       
       <section className={`p-5 w-full`}>
-        <div className="container mx-auto">
+        <div className="max-w-[1184px] px-5 mx-auto">
           <h1 className="text-[40px] mb-5">{page.title.rendered}</h1>
           <div className="editor" dangerouslySetInnerHTML={{__html: page.content.rendered}} />
         </div>

@@ -6,7 +6,7 @@ export default function WhatsIncluded() {
     <Section className={`bg-white`}>
         
       <div className="py-[60px] text-center">
-        <h2 class="text-[34px] md:text-[44px] font-semibold">What is included</h2>
+        <h2 className="text-[34px] md:text-[44px] font-semibold">What is included</h2>
         <p>A complete solution that was built with the retail user experience in-mind</p>
       </div>
 
