@@ -7,6 +7,10 @@ import LayoutDefault from "../components/templates/layoutDefault"
 import Section from "../components/templates/section"
 import Button from "../components/templates/button"
 import Bottom from "../components/bottom"
+import Divider from "../components/divider"
+import WantToKnowMore from "../components/wantToKnowMore"
+import HowToGetStarted from "../components/howToGetStarted"
+import WhatsIncluded from "../components/whatsIncluded"
 
 export default function HowItWorks() {
 
@@ -197,14 +201,26 @@ export default function HowItWorks() {
             </Swiper>
 
             <div className="text-center mt-10">
-              <Button type="link" link="/getting-started" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
+              <Button type="link" link="/signup" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
             </div>
 
           </div>
         </div>
       </Section>
 
-      <div className="h-[60px]"></div>
+      <Divider className="h-[60px]" />
+
+      <HowToGetStarted />
+
+      <Divider className="h-[60px]" />
+
+      <WhatsIncluded />
+
+      <Divider className="h-[60px]" />
+
+      <WantToKnowMore />
+
+      <Divider className="h-[60px]" />
 
       <Bottom />
 
