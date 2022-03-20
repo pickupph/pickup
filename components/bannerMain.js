@@ -32,7 +32,7 @@ export default function BannerMain({ className }) {
       <div className="md:my-20 text-center">
         <h1 className="text-fs-heroHeaderSM md:text-fs-heroHeader">We make online ordering uncomplicated</h1>
         <p className="my-5 text-[20px]">ZERO commission, simple but powerful online ordering and delivery system built for your retail business.</p>
-        <Button type="link" link="/book-a-demo" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
+        <Button type="link" link="/signup" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
       </div>
 
       <div className="my-5 md:my-0 ">

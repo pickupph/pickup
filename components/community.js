@@ -48,7 +48,7 @@ export default function Community() {
 
       <div className="container mx-auto">
         <div className="text-center py-[50px]">
-          <a className="text-fs-button md:text-fs-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90" href="/book-a-demo">Get started for FREE</a>
+          <a className="text-fs-button md:text-fs-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90" href="/signup">Get started for FREE</a>
         </div>
       </div>
     </section>

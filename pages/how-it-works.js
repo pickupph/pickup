@@ -25,7 +25,7 @@ export default function HowItWorks() {
               <h1 className="text-[38px] md:text-[40px] lg:text-[52px] font-semibold leading-tight mb-8">The most powerful commission-free mobile ordering</h1>
               <p className="text-[20px] lg:text-[22px] mb-8">Create an amazing branded customer experience, increase your revenue and margins while owning the customer data</p>
               <div>
-                <Button type="link" link="/book-a-demo" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
+                <Button type="link" link="/signup" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
               </div>
             </div>
             <div className="text-center">
@@ -124,7 +124,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center">
-          <Button type="link" link="/book-a-demo" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
+          <Button type="link" link="/signup" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
         </div>
 
         <div className="h-[30px]"></div>
@@ -193,7 +193,7 @@ export default function HowItWorks() {
             </Swiper>
 
             <div className="text-center mt-10">
-              <Button type="link" link="/book-a-demo" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
+              <Button type="link" link="/signup" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
             </div>
 
           </div>
