@@ -3,6 +3,7 @@ import AsFeaturedIn from "../components/asFeaturedIn"
 import BannerMain from "../components/bannerMain"
 import Bottom from "../components/bottom"
 import BoxVideo from "../components/boxVideo"
+import Community from "../components/community"
 import Divider from "../components/divider"
 import Features from "../components/features"
 import LayoutDefault from "../components/templates/layoutDefault"
@@ -22,8 +23,8 @@ export default function Home() {
           src: `/videos/pickup.mp4`,
           type: `video/mp4`
         }}
-        title="Lorem Ipsum"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title="Your site, your design"
+        content="Create your own branded online store in minutes with professional templates; simply add your logo, images, change colours and start bringing your online store to life."
       />
 
       {/** Component special discounts */}
@@ -33,8 +34,8 @@ export default function Home() {
           src: `/videos/video-2-square.mp4`,
           type: `video/mp4`
         }}
-        title="Lorem Ipsum"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title="Promote with ease"
+        content="Attract new and convert existing customers to your user-friendly site and enjoy seeing your promotions and marketing ROAS make an impact on your business in the real world."
         order="rl"
       />
 
@@ -45,8 +46,8 @@ export default function Home() {
           src: `/videos/video-3-square.mp4`,
           type: `video/mp4`
         }}
-        title="Lorem Ipsum"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title="Collect payments &amp; manage orders"
+        content="All the hard work has been done in advance, so your store can accept all major payment methods instantly and manage incoming orders on the fly through our in-store app."
       />
         
 
@@ -57,8 +58,9 @@ export default function Home() {
           src: `/videos/track-delivery.mp4`,
           type: `video/mp4`
         }}
-        title="Track Delivery"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title="Deliver effortlessly
+        "
+        content="Free up time with your operations staff by using our auto-hailing delivery feature. We've removed the need for manually booking riders so your staff can focus on providing the best service to your customers."
         order="rl"
       />
 
@@ -69,12 +71,15 @@ export default function Home() {
           src: `/videos/video-rewards.mp4`,
           type: `video/mp4`
         }}
-        title="Rewards"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title="Re engage customers"
+        content="Keep your brand top of mind with customers through our loyalty platform; create relevant personal promotions, loyalty programs, new customer engagement journeys and much more."
       />
 
       {/** Features 3 grid component */}
       <Features />
+
+      {/** */}
+      <Community />
       
       {/** */}
       <Divider className="container mx-auto" />

@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Selena Gomez",
+    "icon": {
+      "src": "/images/placeholders/selena-gomez-email.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/selena-gomez-email.webp",
+      "width": 480,
+      "height": 320
+    }
+  },
+  {
+    "name": "The Guardian",
+    "icon": {
+      "src": "/images/placeholders/linktree-profile-the-guardian.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/linktree-profile-the-guardian.webp",
+      "width": 480,
+      "height": 320
+    }
+  },
+  {
+    "name": "Gary Vee",
+    "icon": {
+      "src": "/images/placeholders/linktree-profile-gary-vee.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/linktree-profile-gary-vee.webp",
+      "width": 480,
+      "height": 320
+    }
+  },
+  {
+    "name": "LA Clippers",
+    "icon": {
+      "src": "/images/placeholders/linktree-profile-la-clippers.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/linktree-profile-la-clippers.webp",
+      "width": 480,
+      "height": 320
+    }
+  },
+  {
+    "name": "Alicia Keys",
+    "icon": {
+      "src": "/images/placeholders/alicia.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/alicia.webp",
+      "width": 480,
+      "height": 320
+    }
+  },
+  {
+    "name": "Red Bull",
+    "icon": {
+      "src": "/images/placeholders/linktree-profile-red-bull.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/linktree-profile-red-bull.webp",
+      "width": 480,
+      "height": 320
+    }
+  },
+  {
+    "name": "Pharrell",
+    "icon": {
+      "src": "/images/placeholders/linktree-profile-pharrell.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/linktree-profile-pharrell.webp",
+      "width": 480,
+      "height": 320
+    }
+  },
+  {
+    "name": "Rhett and Link",
+    "icon": {
+      "src": "/images/placeholders/linktree-profile-rhettandlink.webp",
+      "width": 480,
+      "height": 320
+    },
+    "image": {
+      "src": "/images/placeholders/linktree-profile-rhettandlink.webp",
+      "width": 480,
+      "height": 320
+    }
+  }
+]

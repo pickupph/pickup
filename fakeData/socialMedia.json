@@ -3,7 +3,7 @@
     "label": "Facebook",
     "link": "https://www.facebook.com/pickup.ph/",
     "icon": {
-      "src": "/images/icon-facebook.png",
+      "src": "/images/icon-facebook-colored.png",
       "height": 64,
       "width": 64
     }
@@ -12,7 +12,16 @@
     "label": "Instagram",
     "link": "https://www.instagram.com/pickup.ph/",
     "icon": {
-      "src": "/images/icon-instagram.png",
+      "src": "/images/icon-instagram-colored.png",
+      "height": 64,
+      "width": 64
+    }
+  },
+  {
+    "label": "Youtube",
+    "link": "https://www.youtube.com/channel/UCLvVKfRo-NRfQRaQSqlaAFw",
+    "icon": {
+      "src": "/images/icon-youtube-colored.png",
       "height": 64,
       "width": 64
     }

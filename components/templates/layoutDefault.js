@@ -9,7 +9,7 @@ import PopupMainmenu from "../popupMainMenu"
 import SocialMedia from "../socialMedia"
 import Toolbar from "../toolbar"
 
-export default function LayoutDefault({ className, meta, children }) {
+export default function LayoutDefault({ className, classNameMain, meta, children }) {
 
   const { popupMenu } = useSelector(state => state.ui)
 
@@ -27,7 +27,7 @@ export default function LayoutDefault({ className, meta, children }) {
         <Header />
 
         {/** Main */}
-        <main className="flex-grow">{children}</main>
+        <main className={`flex-grow ${classNameMain}`}>{children}</main>
 
         {/** Social media */}
         <SocialMedia />

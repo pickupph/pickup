@@ -1,0 +1,112 @@
+[
+  {
+    "type": "text",
+    "name": "firstname",
+    "label": "Enter your first name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "first name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "lastname",
+    "label": "Enter your last name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "last name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "mobilephone",
+    "label": "Enter your mobile number",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Mobile number is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "email",
+    "label": "Email address*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Email address is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "location",
+    "label": "Where in the world are you*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Location is required."
+    }
+  },
+  {
+    "type": "radio",
+    "name": "haveused",
+    "label": "Have you used Pickup.ph in the past?*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Item is required."
+    }
+  },
+  {
+    "type": "radio",
+    "name": "accounttype",
+    "label": "(if yes) As a Merchant / Customer",
+    "validation": {
+      "required": false,
+      "valid-feedback": "",
+      "invalid-feedback": "Item is required."
+    }
+  },
+  {
+    "type": "textarea",
+    "name": "socialmedia",
+    "label": "Which of your social profiles has the most engagement? Add the link below.*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Social media is required."
+    }
+  },
+  {
+    "type": "radio",
+    "name": "paidsponsor",
+    "label": "Do you expect to be paid for promoting pickup.ph?*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Item is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "costperpost",
+    "label": "How much do you expect to be paid per post on your top social channel?",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Input is required."
+    }
+  },
+  {
+    "type": "textarea",
+    "name": "appeal",
+    "label": "Tell us what appeals to you most about pickup.ph?",
+    "validation": {
+      "required": false,
+      "valid-feedback": "",
+      "invalid-feedback": "Input is required."
+    }
+  }
+]

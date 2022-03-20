@@ -5,7 +5,7 @@ import Meta from "./meta"
 import FooterLayoutBasic from "../footerLayoutBasic"
 import HeaderLayoutBasic from "../headerLayoutBasic"
 
-export default function LayoutBasic({ className, meta, children }) {
+export default function LayoutBasic({ className, classNameMain, meta, children }) {
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function LayoutBasic({ className, meta, children }) {
         <HeaderLayoutBasic />
 
         {/** Main */}
-        <main className="flex-grow">{children}</main>
+        <main className={`flex-grow ${classNameMain}`}>{children}</main>
 
         <FooterLayoutBasic />
 

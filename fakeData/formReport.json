@@ -1,0 +1,126 @@
+[
+  {
+    "type": "text",
+    "name": "firstname",
+    "label": "First name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "First name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "lastname",
+    "label": "Last name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Last name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "email",
+    "label": "Email",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Email is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "mobilephone",
+    "label": "Contact number",
+    "validation": {
+      "required": false,
+      "valid-feedback": "",
+      "invalid-feedback": "Contact number is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "pickupurl",
+    "label": "Pickup URL you are reporting",
+    "validation": {
+      "required": false,
+      "valid-feedback": "",
+      "invalid-feedback": "Pickup URL you are reporting is required."
+    }
+  },
+  {
+    "type": "select",
+    "name": "type",
+    "label": "Type of report",
+    "options": [
+      {
+        "value": "Account Impersonation",
+        "label": "Account Impersonation"
+      },
+      {
+        "value": "Product Misrepresentation",
+        "label": "Product Misrepresentation"
+      },
+      {
+        "value": "Counterfeit Items",
+        "label": "Counterfeit Items"
+      },
+      {
+        "value": "Harassment",
+        "label": "Harassment"
+      },
+      {
+        "value": "Copyright or trademark infringement",
+        "label": "Copyright or trademark infringement"
+      },
+      {
+        "value": "Other",
+        "label": "Other"
+      }
+    ],
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Type of report is required."
+    }
+  },
+  {
+    "type": "select",
+    "name": "describe",
+    "label": "Which option best describes you?",
+    "options": [
+      {
+        "value": "Pickup Customer",
+        "label": "Pickup Customer"
+      },
+      {
+        "value": "Non-Pickup Customer",
+        "label": "Non-Pickup Customer"
+      },
+      {
+        "value": "Pickup Merchant User",
+        "label": "Pickup Merchant User"
+      },
+      {
+        "value": "Pickup Merchant Owner",
+        "label": "Pickup Merchant Owner"
+      }
+    ],
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Description is required."
+    }
+  },
+  {
+    "type": "textarea",
+    "name": "reason",
+    "label": "What is the reason for reporting this pickup.ph account?*",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Reason is required."
+    }
+  }
+]

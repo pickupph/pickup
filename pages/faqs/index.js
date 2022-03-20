@@ -5,6 +5,10 @@ import { IconArrowDown } from '../../components/templates/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 
+import TimeAgo from 'javascript-time-ago'
+import en from 'javascript-time-ago/locale/en.json'
+TimeAgo.addDefaultLocale(en)
+
 // Helpers
 import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 
@@ -12,7 +16,6 @@ import { WP_API_URL, WP_PER_PAGE } from '../../config/constants'
 import LayoutBasic from "../../components/templates/layoutBasic"
 
 // Data
-import dataFAQs from '../../fakeData/faqs.json'
 import { setTerm } from '../../store/searchSlice'
 
 
@@ -21,6 +24,8 @@ export default function Faqs({ collection }) {
   const { term } = useSelector(state=>state.search)
   const [ stateFaqs, setStateFaqs ] = useState(collection)
   const dispatch = useDispatch()
+  
+  const timeAgo = new TimeAgo('en-US')
 
   useEffect(()=>{
 
@@ -35,7 +40,7 @@ export default function Faqs({ collection }) {
       setStateFaqs(collection.filter(faq=>faq.title.rendered.match(pattern)))
     }
 
-  },[ term ])
+  }, [ term ])
 
   return (
     <LayoutBasic
@@ -69,16 +74,26 @@ export default function Faqs({ collection }) {
           </div>
 
           <div>
-            { collection.length > 0 ?
+            { stateFaqs.length > 0 ?
               <ul className="grid rounded-lg overflow-hidden hover:shadow-md border border-[#d4dadf] gap-[1px] bg-[#d4dadf]">    
               {
-                stateFaqs.map((item, i)=>{     
+                stateFaqs.map((item, i)=>{    
                   
-                  console.log(collection)
+                  //
+                  // Prepare data from WP
+                  //
+                  let link = `/faqs/${item.slug}`
+                  let author = {
+                    name: item._embedded.author[0].name,
+                    image: {
+                      src: item._embedded.author[0].avatar_urls[48]
+                    }
+                  }
+                  let date = timeAgo.format(new Date(item.date))
 
                   return (
                     <li key={i} className="">
-                      <Link href={`/faqs/${item.slug}`}>
+                      <Link href={link}>
                         <a 
                           className="bg-white p-[30px] block text-primary2 text-[18px]"
                           onClick={()=>dispatch(setTerm(""))}
@@ -89,12 +104,12 @@ export default function Faqs({ collection }) {
                           <div className="text-[13px] text-[#8f919d] flex items-center space-x-4">
                             <div className="">
                               <div className="h-[32px] w-[32px] bg-primary2 text-white text-[18px] font-bold rounded-full flex items-center justify-center overflow-hidden">
-                                <Image src={item._embedded.author[0].avatar_urls[48]} height={32} width={32} alt={item._embedded.author[0].name} />
+                                <Image src={author.image.src} height={32} width={32} alt={author.name} />
                               </div>
                             </div>
                             <div>
-                              Written by <span className="text-[#4f5e6b]">{item._embedded.author[0].name}</span><br />
-                              Updated over a week ago
+                              Written by <span className="text-[#4f5e6b]">{author.name}</span><br />
+                              Updated over {date}
                             </div>
                           </div>
                         </a>
@@ -122,8 +137,6 @@ export async function getStaticProps() {
    * Pull FAQs collection
    */
   const collection = await fetch(`${WP_API_URL}/wp/v2/faqs?per_page=${WP_PER_PAGE}&_embed`).then(res => res.json())
-
-  console.log(collection)
 
   return {
     props: {

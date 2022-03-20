@@ -1,9 +1,13 @@
 module.exports = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   images: {
     domains: [
-      process.env.NEXT_PUBLIC_WP,
-      "secure.gravatar.com"
+      "cms.pickup.ph",
+      "secure.gravatar.com",
+      "pickupbeta.s3.ap-southeast-1.amazonaws.com"
     ]
   },
+  env: {
+    API_BASEURL: process.env.API_BASEURL
+  }
 }

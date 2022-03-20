@@ -20,7 +20,7 @@ export default function FooterLayoutBasic() {
               <li key={i}>
                 <Link href={sm.link} target="_blank" rel="noopener noreferrer">
                   <a>
-                    <Image src={sm.icon.src} alt={sm.label} width={16} height={16} />
+                    <Image className='grayscale' src={sm.icon.src} alt={sm.label} width={16} height={16} />
                   </a>
                 </Link>
               </li>

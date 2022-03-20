@@ -2,6 +2,7 @@
 import { Provider } from 'react-redux'
 import store from '../store'
 
+import 'swiper/css'
 import 'tailwindcss/tailwind.css'
 import '../styles/app.scss'
 
