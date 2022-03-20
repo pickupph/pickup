@@ -12,7 +12,7 @@ export default function About() {
       meta={{
         title: `About ${SITE_NAME} | The ${SITE_NAME} story`
       }}
-    >
+    > 
 
       <div className="container mx-auto px-5 py-10 md:py-20">
 
