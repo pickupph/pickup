@@ -150,12 +150,14 @@ export default function HowItWorks() {
         </div>
       </Section>
 
+      <Divider className="md:h-[60px]" />
+
       {/** */}
       <Section>
-        <div className="max-w-[1000px] mx-auto pt-5 md:pt-10 text-center">
+        <div className="max-w-[1000px] mx-auto text-center">
           <h2 className="text-[34px] md:text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Seamlessly integrated payments and delivery</h2>
           <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">We have already integrated best-in-breed partners so that you can enjoy a turnkey payment and delivery solution.</p>
-          <div className="py-10">
+          <div className="mt-10">
             <Swiper
               spaceBetween={20}
               slidesPerView={2}

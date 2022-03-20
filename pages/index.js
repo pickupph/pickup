@@ -88,7 +88,7 @@ export default function Home() {
       <AsFeaturedIn />
 
       {/** */}
-      <Bottom className="mb-10 md:mb-20" />
+      <Bottom className="" />
 
     </LayoutDefault>
     

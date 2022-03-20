@@ -20,8 +20,8 @@ export default function Bottom({ className }) {
   const [ stateLegalVisibility, setStateLegalVisibility ] = useState(false)
 
   return (
-    <section className={`p-5 w-full bg-white ${className}`}>
-      <div className="container mx-auto">
+    <section className={`py-5 w-full bg-white ${className}`}>
+      <div className="mx-auto px-5 max-w-[1184px]">
 
         <div className="flex flex-col items-start md:flex-row space-y-5 md:space-y-0 md:space-x-28 lg:space-x-36">
           

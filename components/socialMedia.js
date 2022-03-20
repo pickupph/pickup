@@ -10,8 +10,8 @@ import dataSocialMedia from '../fakeData/socialMedia.json'
 
 export default function SocialMedia() {
   return (
-    <section className="px-5">
-      <div className="py-4 container mx-auto border-t border-b flex items-center justify-between">
+    <section className="px-5 max-w-[1184px] mx-auto w-full">
+      <div className="py-4 px-5 max-w-[1184px] mx-auto border-t border-b flex items-center justify-between">
         <Logo />
         <div>
           <ul className="flex items-center space-x-5">
