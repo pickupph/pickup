@@ -21,8 +21,8 @@ export default function HowItWorks() {
 
       {/** */}
       <Section>
-        <div className="text-center py-10">
-          <h1 class="text-[44px] font-semibold mb-8">How to get started</h1>
+        <div className="text-center py-3 md:py-10">
+          <h1 class="text-[34px] md:text-[44px] font-semibold">How to get started</h1>
         </div>
       </Section>
 
