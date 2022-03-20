@@ -60,7 +60,7 @@ export default function Home() {
         }}
         title="Deliver effortlessly
         "
-        content="Free up time with your operations staff by using our auto-hailing delivery feature; your staff no longer need to manually hail riders and can focus on providing the best service to your customers."
+        content="Free up time with your operations staff by using our auto-hailing delivery feature. We've removed the need for manually booking riders so your staff can focus on providing the best service to your customers."
         order="rl"
       />
 
