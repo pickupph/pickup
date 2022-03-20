@@ -40,9 +40,9 @@ export default function HowItWorks() {
       </Section>
 
       {/**  */}
-      <Section className={`py-[60px]`}>
+      <Section className={`md:py-[60px]`}>
         <div className="max-w-[852px] mx-auto text-center">
-          <h2 className="text-[44px] font-semibold mb-8">Breadth of solutions</h2>
+          <h2 className="text-[34px] md:text-[44px] font-semibold mb-8">Breadth of solutions</h2>
           <p className="text-[18px] lg:text-[20px]">Pickup is a cloud-based application that is built by retailers specifically for retailers. It is lightning-fast and intuitive app that your customers and employees will love to use.</p>
         </div>
       </Section>
@@ -142,7 +142,7 @@ export default function HowItWorks() {
       {/**  */}
       <Section>
         <div className="max-w-[1000px] mx-auto pt-5 md:pt-10 text-center">
-          <h2 className="text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Leading brands trust Pickup</h2>
+          <h2 className="text-[34px] md:text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Leading brands trust Pickup</h2>
           <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">Industry leading restaurateurs, entrepreneurs, and brands use Pickup in their marketing strategy and you should too.</p>
           <div className="mt-10">
             <Image src="/images/placeholders/logos.jpg" width={4938} height={1477} alt="Logo placeholder" />
@@ -153,7 +153,7 @@ export default function HowItWorks() {
       {/** */}
       <Section>
         <div className="max-w-[1000px] mx-auto pt-5 md:pt-10 text-center">
-          <h2 className="text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Seamlessly integrated payments and delivery</h2>
+          <h2 className="text-[34px] md:text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Seamlessly integrated payments and delivery</h2>
           <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">We have already integrated best-in-breed partners so that you can enjoy a turnkey payment and delivery solution.</p>
           <div className="py-10">
             <Swiper
@@ -208,19 +208,19 @@ export default function HowItWorks() {
         </div>
       </Section>
 
-      <Divider className="h-[60px]" />
+      <Divider className="md:h-[60px]" />
 
       <HowToGetStarted />
 
-      <Divider className="h-[60px]" />
+      <Divider className="md:h-[60px]" />
 
       <WhatsIncluded />
 
-      <Divider className="h-[60px]" />
+      <Divider className="md:h-[60px]" />
 
       <WantToKnowMore />
 
-      <Divider className="h-[60px]" />
+      <Divider className="md:h-[60px]" />
 
       <Bottom />
 
