@@ -36,7 +36,7 @@ export default function HowItWorks() {
       </Section>
 
       {/**  */}
-      <Section className={`bg-[#fafafc]`}>
+      <Section className={``}>
         <div className="max-w-[852px] mx-auto pt-5 md:pt-10 text-center">
           <h2 className="text-[44px] font-semibold mb-8">Breadth of solutions</h2>
           <p className="text-[18px] lg:text-[20px]">Pickup is a cloud-based application that is built by retailers specifically for retailers. It is lightning-fast and intuitive app that your customers and employees will love to use.</p>
@@ -44,7 +44,7 @@ export default function HowItWorks() {
       </Section>
 
       {/**  */}
-      <Section className={`bg-[#fafafc]`}>
+      <Section className={``}>
         <div className="max-w-[1000px] mx-auto py-10 text-center">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-20">
 
@@ -83,8 +83,12 @@ export default function HowItWorks() {
 
             {/** Two */}
             <div className="flex items-start lg:items-center justify-center">
-              <div className="sticky top-[120px]">
-                <Image src="/images/placeholders/smartphone.png" width={298} height={512} alt="Placeholder" />
+              <div className="top-[120px]">
+         
+                <video className="w-full" autoPlay muted loop allowFullScreen={false} playsInline>
+                  <source src="/videos/breadth-of-solutions.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
 
