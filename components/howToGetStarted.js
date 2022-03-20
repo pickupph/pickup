@@ -30,7 +30,7 @@ export default function HowToGetStarted() {
       <Section>
         <div className="text-center">
           <Link href="/signup">
-            <a class="text-fs-button md:text-fs-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90" href="/signup">Get Started for Free</a>
+            <a class="text-fs-button md:text-fs-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90" >Get Started for Free</a>
           </Link>
         </div>
       </Section>

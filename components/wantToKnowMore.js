@@ -9,7 +9,7 @@ export default function WantToKnowMore() {
       </div>
       <div className="text-center">
         <Link href="/book-a-demo">
-          <a class="text-fs-button md:text-fs-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90 mx-auto" href="/signup mx-auto">Get in touch</a>
+          <a class="text-fs-button md:text-fs-buttonLg uppercase px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90 mx-auto">Get in touch</a>
         </Link>
       </div>
     </Section>
