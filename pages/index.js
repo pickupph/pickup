@@ -11,7 +11,7 @@ import LayoutDefault from "../components/templates/layoutDefault"
 
 export default function Home() {
   return (
-    <LayoutDefault classNameMain={`max-w-[1184px] mx-auto px-5`}>
+    <LayoutDefault>
 
       {/** Banner */}
       <BannerMain className="md:mb-20" />

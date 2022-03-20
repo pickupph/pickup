@@ -8,7 +8,7 @@ import dataFeatures from '../fakeData/features.json'
 export default function Features({ className }) {
   return (
     <section className={`${className}`}>
-      <div className="py-20 px-5 container mx-auto">
+      <div className="py-20 px-5 max-w-[1184px] mx-auto px-5">
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5 mb-20">
           {
             dataFeatures.map((f,i)=>(

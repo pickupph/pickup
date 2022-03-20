@@ -6,12 +6,12 @@ import influencersData from '../fakeData/influencers.json'
 export default function Community() {
   return (
     <section className="py-[40px]">
-      <div className="container mx-auto p-5">
+      <div className="max-w-[1184px] mx-auto px-5 py-5">
         <h2 className="text-[32px] text-[#131415]">Join the Pickup community today</h2>
         <p className="text-[20px] text-[#53585f] max-w-[760px]">Industry leading restaurateurs, entrepreneurs, and brands use Pickup in their marketing strategy and you should too.</p>
       </div>
 
-      <div className="py-8 container mx-auto overflow-visible p-5">
+      <div className="py-8 max-w-[1184px] mx-auto px-5 overflow-visible py-5">
         <Swiper
           className={``}
           spaceBetween={20}

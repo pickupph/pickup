@@ -27,7 +27,7 @@ export default function BannerMain({ className }) {
   }, [])
 
   return (
-    <section className={`p-5 md:min-h-banner flex flex-col items-center justify-center ${className}`}>
+    <section className={`p-5 md:min-h-banner flex flex-col items-center justify-center max-w-[1184px] mx-auto px-5 ${className}`}>
       
       <div className="md:my-20 text-center">
         <h1 className="text-fs-heroHeaderSM md:text-fs-heroHeader">We make online ordering uncomplicated</h1>
@@ -49,15 +49,15 @@ export default function BannerMain({ className }) {
       <div className="max-w-[576px] w-full h-[64px] md:h-[80px]">
         <div className="border border-[#7551e9] rounded-full h-full flex items-center justify-between">
           
-          <div className="mt-2 min-w-[70px] pl-[30px]">
+          <div className="mt-2 min-w-[70px] pl-[15px] md:pl-[30px]">
             <Image src="/images/logo-square.png" height="32" width="32" alt="Logo Pickup" />
           </div>
           <form className="flex-grow w-full">
             <div>
-              <input type="text" name="brandname" placeholder="YourBrandName" className="text-[24px] md:text-[32px] p-0 m-0 leading-0 text-right w-full border-none focus:outline-none outline-none active:outline-none ring-0 focus:ring-0 text-gray-500 animate-pulse" />
+              <input type="text" name="brandname" placeholder="YourBrandName" className="text-[20px] md:text-[32px] p-0 m-0 leading-0 text-right w-full border-none focus:outline-none outline-none active:outline-none ring-0 focus:ring-0 text-gray-500 animate-pulse" />
             </div>  
           </form>
-          <div className="text-[24px] md:text-[32px] pr-[30px]">.pickup.ph</div>
+          <div className="text-[20px] md:text-[24px] md:text-[32px] pr-[15px] md:pr-[30px]">.pickup.ph</div>
           
         </div>
       </div>

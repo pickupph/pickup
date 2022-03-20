@@ -27,7 +27,7 @@ export default function BoxVideo({
 
   return (
     <section>
-      <div className={`py-5 md:py-0 container mx-auto grid md:grid-cols-2 md:gap-10 items-center justify-content md:min-h-boxXL ${ className}`}>
+      <div className={`py-5 md:py-0 max-w-[1184px] mx-auto px-5 grid md:grid-cols-2 md:gap-10 items-center justify-content md:min-h-boxXL ${ className}`}>
         
         {/** Left */}
         <div className={`p-5 flex items-center justify-center ${order=='rl'?`md:order-2`:``}`}>
