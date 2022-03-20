@@ -193,7 +193,7 @@ export default function HowItWorks() {
             </Swiper>
 
             <div className="text-center mt-10">
-              <Button type="link" link="/signup" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
+              <Button type="link" link="/getting-started" bg="bg-primary2" className="my-5 h-buttonLg text-white hover:brightness-90">Get Started for Free</Button>
             </div>
 
           </div>
