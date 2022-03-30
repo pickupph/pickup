@@ -84,9 +84,9 @@ export default function About() {
           <h2 className='text-[32px] md:text-[40px] text-center font-semibold capitalize mb-4'>
             Come and join our fast-growing team
             </h2>
-            <p className='text-[22px] mb-4'>Go to our Careers page or send us an email to <a href="mailto:careers@pickup.ph" className='text-primary2'>careers@pickup.ph</a></p>
+            <p className='text-[22px] mb-4'>Go to our Careers page or send us an email to <a href="mailto:recruitment@pickup.ph " className='text-primary2'>recruitment@pickup.ph </a></p>
             <p>
-              <a className="text-fs-button md:text-fs-buttonLg px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90" href="#">Find a job at Pickup.ph</a>
+              <a className="text-fs-button md:text-fs-buttonLg px-32px py-3 rounded-2xl font-semibold whitespace-nowrap transition duration-200 ease-in-out items-center inline-flex justify-center bg-primary2 my-5 h-buttonLg text-white hover:brightness-90" href="mailto:recruitment@pickup.ph ">Find a job at Pickup.ph</a>
             </p>
             
         </div>
