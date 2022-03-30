@@ -6,6 +6,7 @@
       "width": 1300,
       "height": 1000
     },
+    "link": "https://crosta.pickup.ph",
     "image": {
       "src": "/images/community/crosta-pizza.jpg",
       "width": 1300,
@@ -19,6 +20,7 @@
       "width": 1300,
       "height": 1000
     },
+    "link": "https://saladstop.pickup.ph",
     "image": {
       "src": "/images/community/salad-stop.jpg",
       "width": 1300,
@@ -32,6 +34,7 @@
       "width": 1300,
       "height": 1000
     },
+    "link": "https://sensei.pickup.ph",
     "image": {
       "src": "/images/community/sensei-sushi.jpg",
       "width": 1300,
@@ -45,6 +48,7 @@
       "width": 1300,
       "height": 1000
     },
+    "link": "https://lachinesca.pickup.ph",
     "image": {
       "src": "/images/community/la-chinesca.jpg",
       "width": 1300,

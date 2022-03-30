@@ -32,12 +32,18 @@ export default function Community() {
             influencersData.map((item, i)=>(
               <SwiperSlide key={i}>
                 <div>
-                  <div className='mb-3 rounded-xl md:rounded-3xl overflow-hidden hover:scale-95 transition-all duration-300 ease-in-out' >
-                    <Image className="rounded-xl md:rounded-3xl object-cover" src={item.image.src} width={item.image.width} height={item.image.height} alt={item.name} />
+                  <div className='mb-3 rounded-xl md:rounded-3xl overflow-hidden hover:scale-95 transition-all duration-300 ease-in-out'>
+
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      <Image className="rounded-xl md:rounded-3xl object-cover" src={item.image.src} width={item.image.width} height={item.image.height} alt={item.name} />
+                    </a>
+                    
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Image className='rounded-full' src={item.icon.src} width={42} height={42} alt={item.name} />
-                    <h3 className='text-[14px] md:text-[20px]'>{item.name}</h3>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" className='flex items-center space-x-3'>
+                      <Image className='rounded-full' src={item.icon.src} width={42} height={42} alt={item.name} />
+                      <h3 className='text-[14px] md:text-[20px]'>{item.name}</h3>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>
