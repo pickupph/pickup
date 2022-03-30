@@ -1,12 +1,16 @@
 // Packages
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 // Data
 import dataForm from '../fakeData/formSignup.json'
 import Button from './templates/button'
+import { WP_API_URL } from '../config/constants'
 
 export default function FormSignup({ className }) {
+
+  const router = useRouter()
 
   const [ stateIsLoading, setStateIsLoading ] = useState(false)
 
@@ -44,7 +48,7 @@ export default function FormSignup({ className }) {
       // Validate
       if(errors.length > 0) {
         setStateIsLoading(false)
-        return false
+        return false 
       }
 
       /**
@@ -52,14 +56,33 @@ export default function FormSignup({ className }) {
        * Do fetch call here after validation success
        * 
        */
-      if(true) {
-        el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Message sent!"</div>`
-      } else {
-        el.innerHTML = `<div class="text-center bg-red-50 text-red-500 py-3">Message failed!</div>`
-      }
+       let formData = new FormData()
+       formData.append('username', e.target.username.value)
+       formData.append('email', e.target.email.value)
+ 
+       const options = {
+         method: "POST",
+         body: formData
+       }  
 
-       e.target.reset()
-       setStateIsLoading(false)
+       fetch(`${WP_API_URL}/contact-form-7/v1/contact-forms/114/feedback`, options)
+      .then(res => res.json())
+      .then(data => {
+
+        if (data.status == 'mail_sent') {
+          el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Signup success!"</div>`
+          e.target.reset()
+          location.href = "https://app.pickup.ph/auth/sign-up "
+          
+        } else {
+          el.innerHTML = `<div class="text-center bg-red-50 text-red-500 py-3">Signup failed!</div>`
+        }
+
+        setStateIsLoading(false)
+
+
+      })
+      .catch(err => console.log('err: ', err))
 
   }
 
@@ -68,15 +91,6 @@ export default function FormSignup({ className }) {
       
       {
         dataForm.map((fi, i)=>{
-
-          if(fi.type=="textarea") {
-            return (
-              <div key={i} className="mb-4 text-left">
-                <textarea className=" w-full outline-none border border-[#cccccc] h-[120px]" placeholder={fi.label} name={fi.name} />
-                <span className="text-red-500 text-[14px] hidden ml-3">{fi.validation['invalid-feedback']}</span>
-              </div>
-            )
-          }
 
           return (
             <div key={i} className="mb-4 text-left">
