@@ -73,7 +73,7 @@ export default function About() {
               ].map((item,i)=>(
                 <div key={i} className='shadow border p-8 rounded-xl'>
                   <h3 className='text-[22px] font-semibold mb-4'>{item.label}</h3>
-                  <p className='leading-relaxed'>{item.content}</p>
+                  <p className='leading-relaxed' dangerouslySetInnerHTML={{__html: item.content}} />
                 </div>
               ))
             }

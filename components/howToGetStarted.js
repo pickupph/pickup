@@ -24,7 +24,7 @@ export default function HowToGetStarted() {
         <StepRL image={{src: `/images/pickup-signup-step-4.png`}} order={4} text="Choose how customers can order" />
         <StepLR image={{src: `/images/pickup-signup-step-5.png`}} order={5} text="Toggle on payment methods" />
         <StepRL image={{src: `/images/pickup-signup-step-6.png`}} order={6} text="Add your pickup URL to socials" />
-        <StepLR image={{src: `/images/pickup-signup-step-7.png`}} order={7} text="Customers can order &amp; pay online" />
+        <StepLR image={{src: `/images/pickup-signup-step-7.png`}} order={7} text="Customers order &amp; pay online" />
         <StepRLVideo image={{}} order={8} text="Reap the benefits of Pickup" last={true} />
 
       </Section>
