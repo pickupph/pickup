@@ -3,7 +3,6 @@ import Section from "./templates/section"
 import StepLR from "./stepLR"
 import StepRL from "./stepRL"
 import StepRLVideo from "./stepRLVideo"
-import Divider from "./divider"
 
 export default function HowToGetStarted() {
   return (

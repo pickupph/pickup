@@ -19,56 +19,42 @@ export default function WhatsIncluded() {
                 "title": "Intuitive design",
                 "content": "Easy to use for customers and retail staff.",
                 "image": {
-                  "src": "/images/image-placeholder.png"
-                }
-              },
-              {
-                "title": "Store updates",
-                "content": "Make changes to prep-times and menus instantly.",
-                "image": {
-                  "src": "/images/image-placeholder.png"
+                  "src": "/images/icon-bolt-black.svg"
                 }
               },
               {
                 "title": "In-store Android app",
                 "content": "A lightning-fast native android store console. ",
                 "image": {
-                  "src": "/images/image-placeholder.png"
+                  "src": "/images/icon-important-devices-black.svg"
                 }
               },
               {
                 "title": "Powerful reporting",
                 "content": "Gain actionable insights on your sales and customers.",
                 "image": {
-                  "src": "/images/image-placeholder.png"
+                  "src": "/images/icon-insights-black.svg"
                 }
               },
               {
-                "title": "Live customer updates",
-                "content": "Keep your customer updated with order status and delivery.",
+                "title": "Instant updates",
+                "content": "Make changes to prep-times and menus instantly.",
                 "image": {
-                  "src": "/images/image-placeholder.png"
+                  "src": "/images/icon-notifications-active-black.svg"
                 }
               },
               {
-                "title": "Payment integration",
+                "title": "Accept payments",
                 "content": "Accept all major payments from cards and eWallets.",
                 "image": {
-                  "src": "/images/image-placeholder.png"
+                  "src": "/images/icon-credit-card-black.svg"
                 }
               },
               {
                 "title": "Delivery integration",
                 "content": "Offer delivery with the largest logistics partners in SE Asia.",
                 "image": {
-                  "src": "/images/image-placeholder.png"
-                }
-              },
-              {
-                "title": "Google Analytics",
-                "content": "All the website traffic data you will ever need.",
-                "image": {
-                  "src": "/images/image-placeholder.png"
+                  "src": "/images/icon-delivery-dining-black.svg"
                 }
               }
             ].map((item, i)=>(
