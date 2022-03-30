@@ -33,7 +33,7 @@ export default function HowItWorks() {
               </div>
             </div>
             <div className="text-center">
-              <Image src="/images/placeholders/how-it-works.jpeg" alt="Pickup how it works" width={500} height={686} className="rounded-[30px]" />
+              <Image src="/images/mobile-phone-showing-pickup-app.jpg" alt="Pickup how it works" width={500} height={686} className="rounded-[30px]" />
             </div>
           </div>
         </div>
