@@ -1,5 +1,6 @@
 // Packages
 import { useSelector } from "react-redux"
+import Link from "next/link"
 
 // Components
 import Meta from "./meta"
@@ -20,7 +21,7 @@ export default function LayoutDefault({ className, classNameMain, meta, children
         
         {/** Toolbar */}
         <Toolbar>
-          🎉 Insert announcement here. <a href="#" className="underline">Learn more</a>
+          🎉 We have a new QR Dine-in ordering feature <Link href="/contact"><a className="underline">Learn More</a></Link>
         </Toolbar>
 
         {/** Header */}

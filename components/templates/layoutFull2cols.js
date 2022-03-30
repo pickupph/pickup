@@ -24,7 +24,7 @@ export default function LayoutFull2cols({ className, meta, children }) {
               </div>
             </section>
           </div>
-          <div className=" items-center justify-center bg-gray-100 hidden md:flex">
+          <div className="items-center justify-center bg-gray-100 hidden md:flex bg-[url('/images/pickup-app-on-table.jpg')] bg-cover bg-center">
             <Image src="/images/image-placeholder.png" height={64} width={64} alt="image placeholder" />
           </div>
         </main>
