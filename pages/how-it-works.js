@@ -154,19 +154,18 @@ export default function HowItWorks() {
 
       {/** */}
       <Section>
-        <div className="max-w-[1000px] mx-auto text-center">
+        <div className="max-w-[1040px] mx-auto text-center">
           <h2 className="text-[34px] md:text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Seamlessly integrated payments and delivery</h2>
           <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">We have already integrated best-in-breed partners so that you can enjoy a turnkey payment and delivery solution.</p>
           <div className="mt-10">
             <Swiper
               spaceBetween={20}
-              slidesPerView={2}
+              slidesPerView={"auto"}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
               breakpoints={{
                 768: {
                   width: 768,
-                  slidesPerView: 4,
                   spaceBetween: 50
                 }
               }}
@@ -174,29 +173,53 @@ export default function HowItWorks() {
               {
                 [
                   {
-                    "label": "Visa"
+                    "label": "Visa",
+                    "icon": {
+                        "src": "/images/icon-visa.png"
+                    }
                   },
                   {
-                    "label": "Mastercard"
+                    "label": "Mastercard",
+                    "icon": {
+                      "src": "/images/icon-mastercard.png"
+                    }
                   },
                   {
-                    "label": "Gcash"
+                    "label": "Gcash",
+                    "icon": {
+                      "src": "/images/icon-gcash-big.png"
+                    }
                   },
                   {
-                    "label": "Grab"
+                    "label": "Grab",
+                    "icon": {
+                      "src": "/images/icon-grab.png"
+                    }
                   },
                   {
-                    "label": "Lalamove"
+                    "label": "Lalamove",
+                    "icon": {
+                      "src": "/images/icon-lalamove.png"
+                    }
                   },
                   {
-                    "label": "PayMaya"
+                    "label": "PayMaya",
+                    "icon": {
+                      "src": "/images/image-placeholder.png"
+                    }
                   },
                   {
-                    "label": "GrabPay"
+                    "label": "GrabPay",
+                    "icon": {
+                      "src": "/images/image-placeholder.png"
+                    }
                   }
                 ].map((item, i)=>(
-                  <SwiperSlide key={i}>
-                    <div className="p-[20px] text-[20px] font-semibold border rounded-[15px]">{item.label}</div>
+                  <SwiperSlide key={i} className="w-auto max-w-[270px]">
+                    <div className="p-[20px] text-[20px] font-semibold border rounded-[15px] flex items-center justify-between space-x-5">
+                      <span className="inline-block min-w-[40px]"><Image src={item.icon.src} height={40} width={40} alt={item.label} /></span>
+                      <span className="mb-2">{item.label}</span>
+                    </div>
                   </SwiperSlide>
                 ))
               }
