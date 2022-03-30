@@ -20,7 +20,7 @@ export default function LayoutDefault({ className, classNameMain, meta, children
         
         {/** Toolbar */}
         <Toolbar>
-          🎉 Insert announcement here. <a href="#" className="underline">Learn more</a>
+          🎉 We have a new QR Dine-in ordering feature Learn More
         </Toolbar>
 
         {/** Header */}
