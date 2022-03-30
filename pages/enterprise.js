@@ -32,7 +32,7 @@ export default function Home() {
               "label": "Multiple stores",
               "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "icon": {
-                "src": "/images/image-placeholder.png",
+                "src": "/images/icon-storefront-black.svg",
                 "height": 512,
                 "width": 512
               }
@@ -41,7 +41,7 @@ export default function Home() {
               "label": "Multiple brands",
               "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "icon": {
-                "src": "/images/image-placeholder.png",
+                "src": "/images/icon-interests-black.svg",
                 "height": 512,
                 "width": 512
               }
@@ -50,7 +50,7 @@ export default function Home() {
               "label": "Multiple stores & multiple brands",
               "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "icon": {
-                "src": "/images/image-placeholder.png",
+                "src": "/images/icon-account-tree-black.svg",
                 "height": 512,
                 "width": 512
               }
