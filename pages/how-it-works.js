@@ -141,7 +141,7 @@ export default function HowItWorks() {
 
       {/**  */}
       <Section>
-        <div className="max-w-[1000px] mx-auto pt-5 md:pt-10 text-center">
+        <div className="max-w-[1280px] mx-auto pt-5 md:pt-10 text-center">
           <h2 className="text-[34px] md:text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Leading brands trust Pickup</h2>
           <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">Industry leading restaurateurs, entrepreneurs, and brands use Pickup in their marketing strategy and you should too.</p>
           <div className="mt-10">
