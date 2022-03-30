@@ -21,7 +21,7 @@ export default function LayoutDefault({ className, classNameMain, meta, children
         
         {/** Toolbar */}
         <Toolbar>
-          🎉 We have a new QR Dine-in ordering feature <Link href="/contact"><a>Learn More</a></Link>
+          🎉 We have a new QR Dine-in ordering feature <Link href="/contact"><a className="underline">Learn More</a></Link>
         </Toolbar>
 
         {/** Header */}
