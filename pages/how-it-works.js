@@ -145,7 +145,7 @@ export default function HowItWorks() {
           <h2 className="text-[34px] md:text-[44px] font-semibold mb-8 max-w-[852px] mx-auto">Leading brands trust Pickup</h2>
           <p className="text-[18px] lg:text-[20px] max-w-[852px] mx-auto">Industry leading restaurateurs, entrepreneurs, and brands use Pickup in their marketing strategy and you should too.</p>
           <div className="mt-10">
-            <Image src="/images/placeholders/logos.jpg" width={4938} height={1477} alt="Logo placeholder" />
+            <Image src="/images/company-logos.jpg" width={4938} height={1477} alt="Pickup app client logos" />
           </div>
         </div>
       </Section>
