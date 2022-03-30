@@ -3,10 +3,14 @@ import Image from "next/image"
 export default function StepLR({ image, order, text, first = false, last = false}) {
   return (
     <div className="flex justify-center items-stretch text-center">
-
+      {console.log(image.src)}
       <div className="flex-grow w-[40%] text-center">
-        <div className="max-w-[256px] text-center mr-3 md:mr-10 ml-auto p-3 md:p-10 my-3 md:my-10 bg-white rounded-2xl shadow">
-          <Image src="/images/image-placeholder.png" height={512} width={512} alt="Image placeholder" />
+        <div className="max-w-[360px] text-center mr-3 md:mr-10 ml-auto my-3 md:my-10 rounded-2xl">
+
+          <div className="real-shadow rounded-3xl">
+            <Image src={image?.src || `/images/image-placeholder.png`} height={512} width={512} alt="Image placeholder" className="object-contain" />
+          </div>
+          
         </div>
       </div>
 

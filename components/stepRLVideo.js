@@ -1,6 +1,25 @@
-import Image from "next/image"
+import { useEffect } from "react"
 
-export default function StepRL({ image, order, text, first = false, last = false}) {
+export default function StepRLVideo({ image, order, text, first = false, last = false}) {
+
+  // On load
+  useEffect(()=>{
+
+    // This will trigger our autoplay
+    const v = document.querySelector('[data-video="popper"]').play()
+
+    if (v !== undefined) {
+      v.then(_ => {
+        // Autoplay started!
+      }).catch(error => {
+        // Autoplay was prevented.
+        // Show a "Play" button so that user can start playback.
+        // console.log('Not autoplaying..')
+      });
+    }
+
+  }, [])
+
   return (
     <div className="flex justify-center items-stretch text-center">
 
@@ -20,11 +39,12 @@ export default function StepRL({ image, order, text, first = false, last = false
       
       <div className="flex-grow w-[40%] text-center">
         <div className="max-w-[360px] text-center ml-3 md:ml-10 mr-auto my-3 md:my-10 rounded-2xl">
-
-          <div className="real-shadow rounded-3xl">
-            <Image src={image?.src || `/images/image-placeholder.png`} height={512} width={512} alt="Image placeholder" className="object-contain" />
+          <div>
+            <video data-video="popper" className="w-full" autoPlay muted loop allowFullScreen={false} playsInline>
+              <source src="/videos/poppers.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-
         </div>
       </div>
       
