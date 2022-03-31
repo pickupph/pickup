@@ -30,7 +30,7 @@ export default function Home() {
           [
             {
               "label": "Multiple stores",
-              "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "content": "My business is a single brand with multiple store locations.",
               "icon": {
                 "src": "/images/icon-storefront-black.svg",
                 "height": 512,
@@ -39,7 +39,7 @@ export default function Home() {
             },
             {
               "label": "Multiple brands",
-              "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "content": "My business has multiple brands within a single location. ",
               "icon": {
                 "src": "/images/icon-interests-black.svg",
                 "height": 512,
@@ -47,8 +47,8 @@ export default function Home() {
               }
             },
             {
-              "label": "Multiple stores & multiple brands",
-              "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "label": "Multiple stores & brands",
+              "content": "My business has multiple brands with multiple store locations.",
               "icon": {
                 "src": "/images/icon-account-tree-black.svg",
                 "height": 512,

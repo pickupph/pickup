@@ -43,7 +43,7 @@ export default function HowItWorks() {
       <Section className={`md:py-[60px]`}>
         <div className="max-w-[852px] mx-auto text-center">
           <h2 className="text-[34px] md:text-[44px] font-semibold mb-8">Breadth of solutions</h2>
-          <p className="text-[18px] lg:text-[20px]">Pickup is a cloud-based application that is built by retailers specifically for retailers. It is lightning-fast and intuitive app that your customers and employees will love to use.</p>
+          <p className="text-[18px] lg:text-[20px]">Pickup is a cloud-based application that is built by retailers specifically for retailers. It is a lightning-fast, intuitive app that your customers and employees will love the use.</p>
         </div>
       </Section>
 
