@@ -201,18 +201,6 @@ export default function HowItWorks() {
                     "icon": {
                       "src": "/images/icon-lalamove.png"
                     }
-                  },
-                  {
-                    "label": "PayMaya",
-                    "icon": {
-                      "src": "/images/image-placeholder.png"
-                    }
-                  },
-                  {
-                    "label": "GrabPay",
-                    "icon": {
-                      "src": "/images/image-placeholder.png"
-                    }
                   }
                 ].map((item, i)=>(
                   <SwiperSlide key={i} className="w-auto max-w-[270px]">
