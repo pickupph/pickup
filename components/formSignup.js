@@ -66,23 +66,23 @@ export default function FormSignup({ className }) {
        }  
 
        fetch(`${WP_API_URL}/contact-form-7/v1/contact-forms/114/feedback`, options)
-      .then(res => res.json())
-      .then(data => {
+        .then(res => res.json())
+        .then(data => {
 
-        if (data.status == 'mail_sent') {
-          el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Signup success!"</div>`
-          e.target.reset()
-          location.href = "https://app.pickup.ph/auth/sign-up "
-          
-        } else {
-          el.innerHTML = `<div class="text-center bg-red-50 text-red-500 py-3">Signup failed!</div>`
-        }
+          if (data.status == 'mail_sent') {
+            el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Signup success!"</div>`
+            e.target.reset()
+            location.href = "https://app.pickup.ph/auth/sign-up "
+            
+          } else {
+            el.innerHTML = `<div class="text-center bg-red-50 text-red-500 py-3">Signup failed!</div>`
+          }
 
-        setStateIsLoading(false)
+          setStateIsLoading(false)
 
 
-      })
-      .catch(err => console.log('err: ', err))
+        })
+        .catch(err => console.log('err: ', err))
 
   }
 
@@ -102,8 +102,8 @@ export default function FormSignup({ className }) {
       }
 
       <div className="text-left text-[14px] flex items-start">
-        <input type="checkbox" name="consent" className="mr-2 mt-1" />
-        <label>By creating an account you are agreeing to our <Link href="/terms-and-conditions"><a className="underline">Terms and Conditions</a></Link> and <Link href="/privacy-policy"><a className="underline">Privacy Policy</a></Link>.</label>
+        <input id="consent" type="checkbox" name="consent" className="mr-2 mt-1" />
+        <label htmlFor="consent">By creating an account you are agreeing to our <Link href="/terms-of-service"><a className="underline" target="_blank" rel="noopener noreferrer">Terms and Service</a></Link> and <Link href="/privacy-policy"><a className="underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a></Link>.</label>
       </div>
 
       <div data-form-message></div>
