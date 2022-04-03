@@ -31,9 +31,8 @@ export default function BannerMain({ className }) {
     const placeholder = "YourBrandName".split("")
     var observer = new IntersectionObserver(function(entries) {
 
+      // Element visible on screen
       if(entries[0].isIntersecting === true) {
-
-        console.log('Element is fully visible in screen')
 
         placeholder.forEach((l, i)=>{
     
