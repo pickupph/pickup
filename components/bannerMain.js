@@ -5,6 +5,9 @@ import Image from "next/image"
 // Components
 import Button from "../components/templates/button"
 
+//
+import { isInViewport } from "../lib/helper"
+
 
 export default function BannerMain({ className }) {
 
@@ -23,6 +26,38 @@ export default function BannerMain({ className }) {
         // console.log('Not autoplaying..')
       });
     }
+
+    const input = document.querySelector("[name='brandname']")
+    const placeholder = "YourBrandName".split("")
+    var observer = new IntersectionObserver(function(entries) {
+
+      if(entries[0].isIntersecting === true) {
+
+        console.log('Element is fully visible in screen')
+
+        placeholder.forEach((l, i)=>{
+    
+          setTimeout(()=>{
+    
+            input.setAttribute("placeholder", input.getAttribute("placeholder") + l)
+    
+          }, i * 100 )
+    
+        })
+    
+        input.focus()
+
+      } else {
+
+        input.setAttribute("placeholder", "")
+
+      }
+
+    }, { threshold: [0] })
+    
+    observer.observe(input)
+
+    
 
   }, [])
 
@@ -54,7 +89,7 @@ export default function BannerMain({ className }) {
           </div>
           <form className="flex-grow w-full">
             <div>
-              <input type="text" name="brandname" placeholder="YourBrandName" className="text-[20px] md:text-[32px] p-0 m-0 leading-0 text-right w-full border-none focus:outline-none outline-none active:outline-none ring-0 focus:ring-0 text-gray-500 animate-pulse" />
+              <input type="text" name="brandname" placeholder="" className="text-[20px] md:text-[32px] p-0 m-0 leading-0 text-right w-full border-none focus:outline-none outline-none active:outline-none ring-0 focus:ring-0 text-gray-500 animate-pulse" />
             </div>  
           </form>
           <div className="text-[20px] md:text-[32px] pr-[15px] md:pr-[30px]">.pickup.ph</div>
