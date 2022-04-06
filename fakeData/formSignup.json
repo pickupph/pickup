@@ -1,32 +1,52 @@
 [
   {
     "type": "text",
-    "name": "username",
-    "label": "Username",
+    "name": "fullname",
+    "label": "Enter your full name",
     "validation": {
       "required": true,
       "valid-feedback": "",
-      "invalid-feedback": "Username is required."
+      "invalid-feedback": "Full name is required."
     }
   },
   {
-    "type": "email",
+    "type": "text",
+    "name": "businessname",
+    "label": "Enter business name",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Business name is required."
+    }
+  },
+  {
+    "type": "text",
+    "name": "mobilephone",
+    "label": "Enter your mobile number",
+    "validation": {
+      "required": true,
+      "valid-feedback": "",
+      "invalid-feedback": "Mobile number is required."
+    }
+  },
+  {
+    "type": "text",
     "name": "email",
-    "label": "Email",
+    "label": "Email address*",
     "validation": {
       "required": true,
       "valid-feedback": "",
-      "invalid-feedback": "Email is required."
+      "invalid-feedback": "Email address is required."
     }
   },
   {
-    "type": "password",
-    "name": "password",
-    "label": "Password",
+    "type": "textarea",
+    "name": "message",
+    "label": "Message*",
     "validation": {
       "required": true,
       "valid-feedback": "",
-      "invalid-feedback": "Password is required."
+      "invalid-feedback": "Message is required."
     }
   }
 ]

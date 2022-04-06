@@ -45,6 +45,13 @@ export default function FormSignup({ className }) {
 
       })
 
+      if(!e.target.consent.checked) {
+        errors.push("Please check consent.")
+        document.querySelector(`input[name="consent"] + label`).classList.add(`text-red-500`)
+      } else {
+        document.querySelector(`input[name="consent"] + label`).classList.remove(`text-red-500`)
+      }
+
       // Validate
       if(errors.length > 0) {
         setStateIsLoading(false)
@@ -57,8 +64,12 @@ export default function FormSignup({ className }) {
        * 
        */
        let formData = new FormData()
-       formData.append('username', e.target.username.value)
-       formData.append('email', e.target.email.value)
+
+       formData.append('fullname', e.target.fullname.value)
+      formData.append('businessname', e.target.businessname.value)
+      formData.append('mobilephone', e.target.mobilephone.value)
+      formData.append('email', e.target.email.value)
+      formData.append('message', e.target.message.value)
  
        const options = {
          method: "POST",
@@ -70,9 +81,12 @@ export default function FormSignup({ className }) {
         .then(data => {
 
           if (data.status == 'mail_sent') {
-            el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Signup success!"</div>`
+            el.innerHTML = `<div class="text-center bg-green-50 text-green-500 py-3 mt-5">"Signup success! Please check your email."</div>`
             e.target.reset()
-            location.href = "https://app.pickup.ph/auth/sign-up "
+
+            setTimeout(()=>{
+              location.href = "https://app.pickup.ph/auth/sign-up"
+            }, 3000)
             
           } else {
             el.innerHTML = `<div class="text-center bg-red-50 text-red-500 py-3">Signup failed!</div>`
@@ -92,6 +106,15 @@ export default function FormSignup({ className }) {
       {
         dataForm.map((fi, i)=>{
 
+          if(fi.type=="textarea") {
+            return (
+              <div key={i} className="mb-4 text-left">
+                <textarea className=" w-full outline-none border border-[#cccccc] h-[120px]" placeholder={fi.label} name={fi.name} />
+                <span className="text-red-500 text-[14px] hidden ml-3">{fi.validation['invalid-feedback']}</span>
+              </div>
+            )
+          }
+
           return (
             <div key={i} className="mb-4 text-left">
               <input type={fi.type} name={fi.name} placeholder={fi.label} className="w-full outline-none border border-[#cccccc]" />
@@ -101,7 +124,7 @@ export default function FormSignup({ className }) {
         })
       }
 
-      <div className="text-left text-[14px] flex items-start">
+      <div className="text-left text-[14px] flex items-start mb-5 consent-wrap">
         <input id="consent" type="checkbox" name="consent" className="mr-2 mt-1" />
         <label htmlFor="consent">By creating an account you are agreeing to our <Link href="/terms-of-service"><a className="underline" target="_blank" rel="noopener noreferrer">Terms and Service</a></Link> and <Link href="/privacy-policy"><a className="underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a></Link>.</label>
       </div>

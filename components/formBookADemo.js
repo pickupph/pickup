@@ -63,7 +63,7 @@ export default function FormBookADemo({ className }) {
       formData.append('businessname', e.target.businessname.value)
       formData.append('mobilephone', e.target.mobilephone.value)
       formData.append('email', e.target.email.value)
-      formData.append('message', e.target.message.value)
+      formData.append('message', e.target.message.value) 
 
       const options = {
         method: "POST",
