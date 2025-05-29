@@ -1,9 +1,5 @@
 [
   {
-    "label": "About",
-    "url": "/about"
-  },
-  {
     "label": "How it works",
     "url": "/how-it-works"
   },
