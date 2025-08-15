@@ -19,12 +19,7 @@ export default function Contact() {
       </div>
 
       <div className="container mb-10 mx-auto px-5 py-5 md:py-10 text-center max-w-[780px]">
-        <FormContact
-          buttonClass={
-            "text-white border hover:text-purple-300 hover:bg-[#7c3aed] hover: border-[#7c3aed] bg-[#7c3aed]"
-          }
-          contact_form_id="5884"
-        />
+        <FormContact contact_form_id="5884" />
       </div>
 
       <Bottom />
