@@ -23,7 +23,7 @@ export default function Contact() {
           buttonClass={
             "text-white border hover:text-purple-300 hover:bg-[#7c3aed] hover: border-[#7c3aed] bg-[#7c3aed]"
           }
-          contact_form_id="603702f"
+          contact_form_id="5884"
         />
       </div>
 
