@@ -8,9 +8,15 @@ import { WP_API_URL } from "../config/constants";
 import dataForm from "../fakeData/formBookADemo.json";
 import Button from "./templates/button";
 
-export default function FormContact({ className }) {
+export default function FormContact({
+  className,
+  buttonClass,
+  contact_form_id = "119",
+}) {
   const [stateIsLoading, setStateIsLoading] = useState(false);
-
+  const appliedClass =
+    buttonClass ||
+    "text-white border hover:text-primary1 hover:bg-white hover: border-primary";
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -71,7 +77,10 @@ export default function FormContact({ className }) {
       body: formData,
     };
 
-    fetch(`${WP_API_URL}/contact-form-7/v1/contact-forms/119/feedback`, options)
+    fetch(
+      `${WP_API_URL}/contact-form-7/v1/contact-forms/${contact_form_id}/feedback`,
+      options,
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.status == "mail_sent") {
@@ -139,10 +148,7 @@ export default function FormContact({ className }) {
       <div data-form-message></div>
 
       <div className="my-5">
-        <Button
-          className="text-white border hover:text-primary1 hover:bg-white hover: border-primary1"
-          disabled={stateIsLoading}
-        >
+        <Button className={appliedClass} disabled={stateIsLoading}>
           {stateIsLoading ? `Sending, please wait... ` : `Contact Us`}
         </Button>
       </div>
